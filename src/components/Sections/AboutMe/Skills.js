@@ -10,16 +10,17 @@ export default function Skills() {
             <h4>Proficient in</h4>
             <img src="../../../images/html.png"></img>
             <img src="../../../images/css.png"></img>
-            <img src="../../../images/bootstrap.png"></img>
             <img src="../../../images/javascript.png"></img>
+            <img src="../../../images/bootstrap.png"></img>
           </div>
         </div>
         <div className="skill-item padd-15">
           <div className="basic-skill">
             <h4>Basic Knowledge</h4>
             <img src="../../../images/react.png"></img>
-            <img src="../../../images/php.png"></img>
+            <img src="../../../images/vuejs.png"></img>
             <img src="../../../images/c-sharp.png"></img>
+            <img src="../../../images/php.png"></img>
           </div>
         </div>
         <div className="skill-item padd-15">

@@ -248,10 +248,20 @@
     .about .about-content .experience,
     .about .about-content .education,
     .about .about-content .qualifications,
-    .about .about-content .skills,
     .about .about-content .personal-info 
     {
         flex: 0 0 100%;
         max-width: 100%;
+    }
+    .about .about-content .skills .skill-item
+    {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .about .about-content .skills .skill-item img
+    {
+        height: 12%;
+        width: 12%;
+        margin-bottom: 50px;
     }
 }
