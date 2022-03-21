@@ -71,7 +71,6 @@
 }
 .about .about-content .qualifications .qualifications-info
 {
-    border-left: 1px solid var(--text-black-900);
     flex: 0 0 100%;
     max-width: 100%;
 }
@@ -81,7 +80,7 @@
     line-height: 45px;
     font-weight: 600;
     font-size: 17px;
-    color: var(--text-black-900);
+    color: var(--text-black-700);
     text-transform: capitalize;
 }
 .about .about-content .skills
@@ -241,6 +240,7 @@
 {   
     .about .about-content .experience,
     .about .about-content .education,
+    .about .about-content .qualifications,
     .about .about-content .skills,
     .about .about-content .personal-info 
     {

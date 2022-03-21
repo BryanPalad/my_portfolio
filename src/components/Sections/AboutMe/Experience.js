@@ -11,36 +11,11 @@ export default function Experience() {
             <div className="timeline-item">
               <div className="circle-dot"></div>
               <h3 className="timeline-date">
-                <i className="fa fa-calendar"></i> 2013- 2015
+                <i className="fa fa-calendar"></i> Oct 2019 - Jan 2022
               </h3>
-              <h4 className="timeline-title">Master in Computer Science</h4>
+              <h4 className="timeline-title">QMS (Document Controller) / Inventory Controller </h4>
               <p className="timeline-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
-            </div>
-            {/* <!-- TIMELINE ITEM --> */}
-            <div className="timeline-item">
-              <div className="circle-dot"></div>
-              <h3 className="timeline-date">
-                <i className="fa fa-calendar"></i> 2013- 2015
-              </h3>
-              <h4 className="timeline-title">Master in Computer Science</h4>
-              <p className="timeline-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
-            </div>
-            {/* <!-- TIMELINE ITEM --> */}
-            <div className="timeline-item">
-              <div className="circle-dot"></div>
-              <h3 className="timeline-date">
-                <i className="fa fa-calendar"></i> 2013- 2015
-              </h3>
-              <h4 className="timeline-title">Master in Computer Science</h4>
-              <p className="timeline-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Triple Star Packaging Corporation
               </p>
             </div>
           </div>
