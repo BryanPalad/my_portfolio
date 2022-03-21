@@ -1,4 +1,8 @@
 @import 'react-notifications/lib/notifications.css';
+.contact .section-title
+{
+    margin-top: 100px;
+}
 .contact-title
 {
     color: var(--skin-color);
@@ -10,10 +14,11 @@
     color: var(--text-black-900);
     text-align: center;
     font-size: 15px;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
 }
 .contact .contact-info-item
 {
+    
     flex: 0 0 25%;
     max-width: 25%;
     text-align: center;
@@ -27,7 +32,7 @@
 {
     font-size: 25px;
     color: var(--text-black-900);
-}
+}   
 .contact .contact-info-item .icon img
 {   
     height: 8%;
@@ -66,7 +71,6 @@
 }
 .contact .contact-form .form-item
 {   
-
     margin-bottom: 30px;
 }
 .contact .contact-form .form-item p

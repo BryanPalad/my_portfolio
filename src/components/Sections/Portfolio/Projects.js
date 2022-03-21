@@ -6,13 +6,6 @@ export default function Projects() {
       <div className="portfolio-item padd-15">
         <div className="portfolio-item-inner shadow-dark">
           <div className="portfolio-img">
-            <img src="images/Tesla-clone.PNG" alt="portfolio" />
-          </div>
-        </div>
-      </div>
-      <div className="portfolio-item padd-15">
-        <div className="portfolio-item-inner shadow-dark">
-          <div className="portfolio-img">
             <img src="images/download.jpg" alt="portfolio" />
           </div>
         </div>
@@ -27,7 +20,7 @@ export default function Projects() {
       <div className="portfolio-item padd-15">
         <div className="portfolio-item-inner shadow-dark">
           <div className="portfolio-img">
-            <img src="images/download.jpg" alt="portfolio" />
+            <img src="images/Tesla-clone.PNG" alt="portfolio" />
           </div>
         </div>
       </div>
@@ -41,7 +34,14 @@ export default function Projects() {
       <div className="portfolio-item padd-15">
         <div className="portfolio-item-inner shadow-dark">
           <div className="portfolio-img">
-            <img src="images/download.jpg" alt="portfolio" />
+            <img src="images/Tesla-clone.PNG" alt="portfolio" />
+          </div>
+        </div>
+      </div>
+      <div className="portfolio-item padd-15">
+        <div className="portfolio-item-inner shadow-dark">
+          <div className="portfolio-img">
+            <img src="images/Tesla-clone.PNG" alt="portfolio" />
           </div>
         </div>
       </div>

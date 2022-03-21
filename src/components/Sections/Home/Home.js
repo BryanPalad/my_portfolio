@@ -19,11 +19,11 @@ export default function Home() {
                   wrapper="h3.my-profession"
                   loop={Infinity}
                   steps={[
-                    " Enthusiastic Dev 😀",
+                    " IT Graduate 👨🏼‍🎓",
                     1000,
-                    " Gamer 😀 ",
+                    " Web Developer 💻",
                     1000,
-                    " Web Developer 😀",
+                    " Gamer 🎮",
                     1000,
                     " Aspiring Full Stack Dev 😀",
                     1000,
