@@ -25,9 +25,9 @@ export default function Skills() {
         </div>
         <div className="skill-item padd-15">
           <div className="tools-used">
-            <h4>Tools Used</h4>
-            <img src="../../../images/vscode.png"></img>
+            <h4>Database / Tools Used</h4>
             <img src="../../../images/github.png"></img>
+            <img src="../../../images/vscode.png"></img>
             <img src="../../../images/mysql.png"></img>
           </div>
         </div>

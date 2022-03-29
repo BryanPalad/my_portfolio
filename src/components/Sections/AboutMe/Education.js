@@ -29,7 +29,7 @@ export default function Education() {
               <h3 className="timeline-date">
                 <i className="fa fa-calendar"></i> SY. 2011- 2015
               </h3>
-              <h4 className="timeline-title">Primary Level</h4>
+              <h4 className="timeline-title">Secondary Level</h4>
               <a
                 href="http://stvincentcollege.edu.ph/index.html"
                 target="_blank"

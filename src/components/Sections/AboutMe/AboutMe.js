@@ -20,7 +20,7 @@ export default function AboutMe() {
             <div className="row">
               <div className="about-text padd-15">
                 <h3>
-                  I'm Bryan Palad and <span> Web Developer</span>
+                  I'm Bryan Palad and<span> Web Developer</span>
                 </h3>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed

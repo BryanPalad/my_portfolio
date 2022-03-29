@@ -32,9 +32,9 @@ export default function Home() {
               </span>
             </h3>
             <p>
-              I'm a BSIT Graduate who seeks for a challenging career with a
+              BSIT Graduate year 2019, who seeks for a challenging career with a
               progressive organization that provides an opportunity to
-              capitalize my programming/technical skills and ASPIRING FULL STACK
+              capitalize my programming/technical skills and I am an ASPIRING FULL STACK
               WEB DEVELOPER in my future career.
             </p>
             <Link
