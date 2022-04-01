@@ -4,6 +4,7 @@ import PersonalInfo from "./PersonalInfo";
 import Qualifications from "./Qualifications";
 import Education from "./Education";
 import Experience from "./Experience";
+import TrainingsAndCert from "./TrainingsAndCert";
 import "./AboutMe.css";
 
 export default function AboutMe() {
@@ -39,8 +40,11 @@ export default function AboutMe() {
             </div>
             <div className="row">
               <Education />
-              <Experience />
-            </div>
+              <div className="expiandcerts">
+              <Experience/>
+              <TrainingsAndCert/>
+              </div>
+              </div>
           </div>
         </div>
       </div>

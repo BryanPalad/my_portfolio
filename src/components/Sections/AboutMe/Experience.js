@@ -11,9 +11,9 @@ export default function Experience() {
             <div className="timeline-item">
               <div className="circle-dot"></div>
               <h3 className="timeline-date">
-                <i className="fa fa-calendar"></i> Oct 2019 - Jan 2022 (Triple Star Packaging Corporation)
+                <i className="fa fa-calendar"></i> Oct. 15 2019 - Jan. 15 2022 (2yrs & 3 months)
               </h3>
-              <h4 className="timeline-title">QMS (Document Controller) / Inventory Controller </h4>
+              <h4 className="timeline-title">Quality Management System (QMS) / Document Controller / Inventory Controller </h4>
               <p className="timeline-text">
                 Triple Star Packaging Corporation
               </p>

@@ -1,6 +1,7 @@
 .portfolio .container
 {
     padding-bottom: 40px;
+    
 }
 .portfolio .portfolio-heading
 {
@@ -18,19 +19,49 @@
     flex: 0 0 33.33%;
     max-width: 33.33%;
     margin-bottom: 30px;
+    position: relative;
 }
 .portfolio .portfolio-item-inner
 {
-    border: 6px solid var(--bg-black-100);
+    /* border: 6px solid var(--bg-black-100); */
     border-radius: 10px;
     overflow: hidden;
-    cursor: pointer;
+    text-align: center;
+}   
+.portfolio .portfolio-item-inner .portfolio-img .links .view-demo
+{
+    position: absolute;
+    left: 22%;
+    bottom: 10%;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 1px 10px;
+    color: black;
+}
+.portfolio .portfolio-item-inner .portfolio-img .links .view-git
+{
+    position: absolute;
+    right: 22%;
+    bottom: 10%;
+    font-size: 20px;
+    color: black;
+}
+.portfolio .portfolio-item-inner .portfolio-img .view-git .fa-github
+{
+    color: black;
 }
 .portfolio .portfolio-item-inner .portfolio-img img 
 {
     height: 100%;
     width: 100%;
     display: block;
+    transition: all 0.3s ease;
+}
+.portfolio .portfolio-item-inner .portfolio-img img:hover
+{
+    transform: scale(1.05);
+    opacity: 0.6;
+
 }
 /*RESPONSIVE*/
 @media (max-width: 991px)

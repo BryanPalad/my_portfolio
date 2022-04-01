@@ -28,7 +28,7 @@
     border-radius: 50%;
     display: block;
     margin: 0 auto 30px;
-    text-align: center;
+    text-align: center; 
     transition: all 0.3s ease;
 }
 .service .service-item .service-item-inner .icon .fa
