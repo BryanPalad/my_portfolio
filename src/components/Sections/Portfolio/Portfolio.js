@@ -17,12 +17,12 @@ export default function Portfolio() {
           </div>
         </div>
         <Projects/>
-        <div className="row">
+        {/* <div className="row">
           <div className="portfolio-heading padd-15">
             <h2>Mini Projects:</h2>
           </div>
         </div>
-        <Projects/>
+        <Projects/> */}
       </div>
     </section>
   );

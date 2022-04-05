@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Sidebar.css";
 import { Link, animateScroll as scroll } from "react-scroll";
 import SidebarData from "./SidebarData";
@@ -13,6 +13,7 @@ export default function Sidebar() {
   const [activecontact, setActivecontact] = useState("");
 
   const [open, setOpen] = useState(document.querySelector(".nav-toggler"));
+
 
   const menu = () => {
     setOpen(document.querySelector(".aside").classList.toggle("open"));

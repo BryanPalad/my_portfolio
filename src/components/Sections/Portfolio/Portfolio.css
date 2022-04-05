@@ -27,24 +27,48 @@
     border-radius: 10px;
     overflow: hidden;
     text-align: center;
+    transition: all 0.3s ease;
+    position:relative;
+    cursor: pointer;
 }   
+.portfolio .portfolio-item-inner:hover
+{
+    transform: scale(1.05);
+    display: block;
+}
+.portfolio .portfolio-item-inner:hover .portfolio-img .links .view-demo,
+.portfolio .portfolio-item-inner:hover .portfolio-img .links .view-git
+{
+    opacity: 1;
+}
 .portfolio .portfolio-item-inner .portfolio-img .links .view-demo
 {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 2px 5px;
     position: absolute;
     left: 22%;
     bottom: 10%;
     font-size: 20px;
-    border-radius: 10px;
-    padding: 1px 10px;
     color: black;
+    opacity: 0;
 }
 .portfolio .portfolio-item-inner .portfolio-img .links .view-git
 {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 2px 5px;
     position: absolute;
     right: 22%;
     bottom: 10%;
     font-size: 20px;
     color: black;
+    opacity: 0;
+}
+.portfolio .portfolio-item-inner .portfolio-img .links .view-git:hover,
+.portfolio .portfolio-item-inner .portfolio-img .links .view-demo:hover
+{
+    background-color: var(--skin-color);
 }
 .portfolio .portfolio-item-inner .portfolio-img .view-git .fa-github
 {
@@ -55,13 +79,70 @@
     height: 100%;
     width: 100%;
     display: block;
-    transition: all 0.3s ease;
+    
 }
-.portfolio .portfolio-item-inner .portfolio-img img:hover
+/* MODALS //////////////////////////////////////////*/
+.functions .col
 {
-    transform: scale(1.05);
-    opacity: 0.6;
-
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+.horizontal-line
+{   
+    height: 3px;
+    width: 100%;
+    margin: -15px 0 10px 0;
+    background-color: var(--skin-color);
+}
+.function-heading
+{
+    font-size: 20px;
+    text-align: left;
+    margin-left: 15px;
+}
+.programming-heading
+{
+    font-size: 20px;
+    text-align: center;
+    margin-left: 15px;
+}
+.main-programming-function
+{
+    margin-bottom: 10px;
+}
+.function-desc
+{
+    font-size: 15px;
+}
+.programming-tools img
+{
+    flex: 0 0 15%;
+    max-width: 15%;
+    margin-right:10px;
+}
+.functions .programming-heading .programming-demo-btn
+{
+    margin-left: 25%;
+}
+.functions .programming-heading .programming-demo-btn .demo,
+.functions .programming-heading .programming-demo-btn .git
+{
+    margin-right: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 2px 5px;
+    color: black;
+}
+.functions .programming-heading .programming-demo-btn .demo:hover,
+.functions .programming-heading .programming-demo-btn .git:hover
+{
+    background-color: var(--skin-color);
+}
+.fa-xmark
+{   
+    cursor: pointer;
+    float: right;
+    font-size: 30px;
 }
 /*RESPONSIVE*/
 @media (max-width: 991px)
@@ -79,4 +160,48 @@
         flex: 0 0 100%;
         max-width: 100%;
     }
+
+    .modal .functions .col
+    {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .functions .function-heading
+    {
+        font-size: 15px;
+    }
+    .functions .programming-heading .main-programming-function
+    {
+        font-size: 15px;
+        margin-top: 20px;
+    }
+    .programming-tools
+    {
+        margin-left: 50px;
+    }
+    .programming-tools img 
+    {
+        flex: 0 0 15%;
+        max-width: 15%;
+        height: 35px;
+        width: 10px;
+    }
+   
+}
+@media (max-width: 500px)
+{
+    .programming-demo-btn .demo,
+    .programming-demo-btn .git
+    {
+        display: none;
+    }
+    .programming-tools 
+    {
+        margin-left: -3px;
+    }
+    #modal-modal-title
+    {
+        font-size: 20px;
+    }
+
 }
