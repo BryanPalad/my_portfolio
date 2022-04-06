@@ -25,9 +25,14 @@ const style = {
   },
   '@media (max-width: 500px)': {
     width: 300,
-    marginTop: '15px',
-    height: 650,
+    marginTop: '10px',
+    height: 710,
   },
+  '@media (max-width: 400px)': {
+    width: 300,
+    marginTop: '20px',
+    height: 630,
+  }
 
 };
 

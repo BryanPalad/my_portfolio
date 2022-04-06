@@ -190,10 +190,9 @@
 }
 @media (max-width: 500px)
 {
-    .programming-demo-btn .demo,
-    .programming-demo-btn .git
+    .programming-demo-btn .demo
     {
-        display: none;
+        margin-left: -25px;
     }
     .programming-tools 
     {
@@ -204,4 +203,15 @@
         font-size: 20px;
     }
 
+}
+@media (max-width: 400px)
+{
+    .programming-demo-btn
+    {
+        display: none;
+    }
+    #modal-modal-title
+    {
+        font-size: 18px;
+    }
 }
