@@ -1,4 +1,17 @@
 @import 'react-notifications/lib/notifications.css';
+
+.contact 
+{
+    background-image: url('../../../../public/images/portfolio/contactus.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+
+}
+.contactme-title
+{
+    color: #302e4d !important;
+}
 .contact .section-title
 {
     margin-top: 100px;
@@ -11,7 +24,7 @@
 }
 .contact-sub-title
 {
-    color: var(--text-black-900);
+    color: #302e4d;
     text-align: center;
     font-size: 15px;
     margin-bottom: 40px;
@@ -31,7 +44,7 @@
 .contact .contact-info-item .icon .fa
 {
     font-size: 25px;
-    color: var(--text-black-900);
+    color: #302e4d;
 }   
 .contact .contact-info-item .icon img
 {   
@@ -42,7 +55,7 @@
 {
     font-size: 18px;
     font-weight: 700;
-    color: var(--text-black-900);
+    color: #302e4d;
     text-transform: capitalize;
     margin: 15px 0 5px;
 }
@@ -50,7 +63,7 @@
 {
     font-size: 16px;
     line-height: 25px;
-    color: var(--text-black-700);
+    color: #302e4d;
     font-weight: 400;
 
 }
@@ -84,11 +97,11 @@
     width: 100%;
     height: 50px;
     border-radius: 25px;
-    background: var(--bg-black-100);
+    /* background: var(--bg-black-100); */
     border: 1px solid var(--bg-black-50);
     padding: 10px 25px;
     font-size: 16px;
-    color: var(--text-black-700);
+    /* color: var(--text-black-700); */
     transition: all 0.3s ease;
 }
 .contact .contact-form .form-item .form-control:focus
@@ -116,7 +129,7 @@
 }
 .fa-github
 {
-  color: var(--text-black-900);
+  color: #302e4d;
   cursor: pointer;
 }
 .fa-google

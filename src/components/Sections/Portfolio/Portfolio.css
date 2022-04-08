@@ -124,6 +124,10 @@
 {
     margin-left: 25%;
 }
+.functions .programming-heading .programming-demo-btn .fa-github
+{
+    color: black;
+}
 .functions .programming-heading .programming-demo-btn .demo,
 .functions .programming-heading .programming-demo-btn .git
 {
@@ -206,10 +210,6 @@
 }
 @media (max-width: 400px)
 {
-    .programming-demo-btn
-    {
-        display: none;
-    }
     #modal-modal-title
     {
         font-size: 18px;

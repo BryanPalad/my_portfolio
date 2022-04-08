@@ -21,7 +21,7 @@ export default function ContactMeData({
       <div className="container">
         <div className="row">
           <div className="section-title padd-15">
-            <h2>Contact Me</h2>
+            <h2 className="contactme-title">Contact Me</h2>
           </div>
         </div>
         <h3 className="contact-title padd-15">Do You Have Any Questions ?</h3>

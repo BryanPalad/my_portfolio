@@ -14,16 +14,17 @@ export default function Modals({
 }) {
   return (
     <>
-      <Modal className="modal"
+      <Modal
+        className="modal"
         open={open}
         onClose={handleClose}
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
       >
         <Box sx={style}>
-        <i className="fa-solid fa-xmark" onClick={handleClose}></i>
+          <i className="fa-solid fa-xmark" onClick={handleClose}></i>
           <Typography id="modal-modal-title" variant="h5" component="h1">
-            {title} 
+            {title}
           </Typography>
           <Typography id="modal-modal-description" sx={{ mt: 2 }}>
             <div className="slide-container">
@@ -47,7 +48,9 @@ export default function Modals({
               <div className="row">
                 <div className="col">
                   <div className="function-heading">
-                    <h4 className="main-programming-function">Main Functions</h4>
+                    <h4 className="main-programming-function">
+                      Main Functions
+                    </h4>
                     <ul className="function-desc">
                       <li>Login / Sign up Patients.</li>
                       <li>Email Verification at Registration.</li>
@@ -64,25 +67,18 @@ export default function Modals({
                 </div>
                 <div className="col">
                   <div className="programming-heading">
-                  <h4 className="main-programming-function">Programming / Tools Used</h4>
+                    <h4 className="main-programming-function">
+                      Programming / Tools Used
+                    </h4>
                     <div className="row">
                       <div className="programming-tools">
-                        <img
-                          src="../../../images/php.png"
-                          alt="php"
-                        ></img>
-                        <img
-                          src="../../../images/css.png"
-                          alt="css"
-                        ></img>
+                        <img src="../../../images/php.png" alt="php"></img>
+                        <img src="../../../images/css.png" alt="css"></img>
                         <img
                           src="../../../images/bootstrap.png"
                           alt="bootstrap"
                         ></img>
-                        <img
-                          src="../../../images/mysql.png"
-                          alt="mysql"
-                        ></img>
+                        <img src="../../../images/mysql.png" alt="mysql"></img>
                         <img
                           src="../../../images/sublime.png"
                           alt="sublime"
@@ -90,23 +86,23 @@ export default function Modals({
                       </div>
                     </div>
                     <div className="programming-demo-btn">
-                    <div className="row">
-                      <a
-                        className="demo"
-                        href="https://github.com/BryanPalad/Cryptoverse"
-                        target="_blank"
-                      >
-                        Demo <i className="fa-solid fa-eye"></i>
-                      </a>
-                      <a
-                        className="git"
-                        href="https://github.com/BryanPalad/Cryptoverse"
-                        target="_blank"
-                      >
-                        Github <i className="fab fa-github"></i>
-                      </a>
+                      <div className="row">
+                        <a
+                          className="demo"
+                          href="http://localhost:8080/I.TSpec%20Appointment%20System/index.php"
+                          target="_blank"
+                        >
+                          Demo <i className="fa-solid fa-eye"></i>
+                        </a>
+                        <a
+                          className="git"
+                          href="https://github.com/BryanPalad/FernandezDentalClinic"
+                          target="_blank"
+                        >
+                          Github <i className="fab fa-github"></i>
+                        </a>
+                      </div>
                     </div>
-                  </div>
                   </div>
                 </div>
               </div>

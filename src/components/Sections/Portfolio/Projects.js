@@ -19,21 +19,20 @@ const style = {
     marginBottom: "30px",
     marginTop: "10px",
   },
-  '@media (max-width: 767px)': {
+  "@media (max-width: 767px)": {
     width: 400,
-    marginTop: '15px',
+    marginTop: "15px",
   },
-  '@media (max-width: 500px)': {
+  "@media (max-width: 500px)": {
     width: 300,
-    marginTop: '10px',
+    marginTop: "10px",
     height: 710,
   },
-  '@media (max-width: 400px)': {
+  "@media (max-width: 400px)": {
     width: 300,
-    marginTop: '20px',
-    height: 630,
-  }
-
+    marginTop: "20px",
+    height: 700,
+  },
 };
 
 export default function Projects() {
@@ -70,14 +69,14 @@ export default function Projects() {
             <div className="links">
               <a
                 className="view-demo"
-                href="https://github.com/BryanPalad/Cryptoverse"
+                href="http://localhost:8080/I.TSpec%20Appointment%20System/index.php"
                 target="_blank"
               >
                 Demo <i className="fa-solid fa-eye"></i>
               </a>
               <a
                 className="view-git"
-                href="https://github.com/BryanPalad/Cryptoverse"
+                href="https://github.com/BryanPalad/FernandezDentalClinic"
                 target="_blank"
               >
                 Github <i className="fab fa-github"></i>
