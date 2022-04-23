@@ -47,8 +47,8 @@ h3.my-profession span
     border-radius: 5px;
     width: 320px;
     height: 320px;
-    background-image:url('https://c.tenor.com/C_nJg-iEolcAAAAd/goku-ultra-instinct.gif');
-    /* background-image: url(../../../../public/images/gradpic.jpg); */
+    /* background-image:url('https://c.tenor.com/C_nJg-iEolcAAAAd/goku-ultra-instinct.gif'); */
+    background-image: url(../../../../public/images/gradpic.jpg);
     background-size: cover;
 }
 .typing
@@ -88,13 +88,98 @@ h3.my-profession span
 }
 /*RESPONSIVE*/
 @media (max-width: 991px)
-{   
+{    
     .home .home-info
     {
         flex: 0 0 100%;
         max-width: 100%;
+        order: 2;
     }
-    .home .home-img 
+    .home .home-info .hello, 
+    .home .home-info .my-profession
+    {
+        text-align: center;
+    }
+    .home .home-info .btn 
+    {
+        text-align: center;
+        justify-content: center;
+        display: block;
+        width: 50%;
+        margin-left: 25%;
+    }
+    #hiremebtn
+    {
+        flex: 0 0 100%;
+        max-width: 100%;
+        text-align: center;
+    }
+    .home .home-img
+    {
+        flex: 0 0 100%;
+        max-width: 100%;
+        order: 1;
+        /* position: relative; */
+    }
+    .home .home-img .profile-pic
+    {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-top: 70px;
+        border-radius: 50%;
+    }
+    .home-img::after, .home-img::before
+    {
+        display: none;
+    }
+
+}
+@media (max-width: 488px)
+{
+    .home .home-info
+    {
+        flex: 0 0 100%;
+        max-width: 100%;
+        order: 2;
+    }
+    .home .home-info .hello, 
+    .home .home-info .hello .name,
+    .home .home-info .my-profession,
+    .home .home-info .my-profession .typing
+    {
+        font-size: 25px;
+        text-align: center;
+    }
+    .home .home-info .btn 
+    {
+        text-align: center;
+        justify-content: center;
+        display: block;
+        width: 50%;
+        margin-left: 25%;
+    }
+    #hiremebtn
+    {
+        flex: 0 0 100%;
+        max-width: 100%;
+        text-align: center;
+    }
+    .home .home-img
+    {
+        flex: 0 0 100%;
+        max-width: 100%;
+        order: 1;
+        /* position: relative; */
+    }
+    .home .home-img .profile-pic
+    {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-top: 70px;
+        border-radius: 50%;
+
+    }
+    .home-img::after, .home-img::before
     {
         display: none;
     }

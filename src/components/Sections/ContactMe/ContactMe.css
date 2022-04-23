@@ -1,5 +1,4 @@
 @import 'react-notifications/lib/notifications.css';
-
 .contact 
 {
     background-image: url('../../../../public/images/portfolio/contactus.jpg');
@@ -44,7 +43,8 @@
 .contact .contact-info-item .icon .fa
 {
     font-size: 25px;
-    color: #302e4d;
+    /* color: #302e4d; */
+    color: var(--skin-color);
 }   
 .contact .contact-info-item .icon img
 {   

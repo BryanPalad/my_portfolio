@@ -36,7 +36,7 @@ const style = {
   },
 };
 
-export default function Projects() {
+export default function MiniProjects() {
   const [open, setOpen] = React.useState(false);
   const handleClose = () => setOpen(false);
   const [title, setTitle] = useState();

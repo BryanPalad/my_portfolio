@@ -1,11 +1,8 @@
 import React from "react";
 import "./ContactMe.css";
-import ScrollUpButton from "react-scroll-up-button";
 import { ClipLoader } from "react-spinners";
-import {
-  NotificationContainer,
-  NotificationManager,
-} from "react-notifications";
+import { NotificationContainer, NotificationManager } from "react-notifications";
+import Fade from "react-reveal/Fade";
 
 export default function ContactMeData({
   form,
@@ -15,15 +12,19 @@ export default function ContactMeData({
   formErrors,
   ing,
   loading,
-}) {
+}) 
+{
   return (
     <section className="contact section" id="contact">
       <div className="container">
         <div className="row">
           <div className="section-title padd-15">
+            <Fade bottom>
             <h2 className="contactme-title">Contact Me</h2>
+            </Fade>
           </div>
         </div>
+        <Fade bottom>
         <h3 className="contact-title padd-15">Do You Have Any Questions ?</h3>
         <h4 className="contact-sub-title padd-15">I'M AT YOUR SERVICES</h4>
         <div className="row">
@@ -75,6 +76,7 @@ export default function ContactMeData({
         <h4 className="contact-sub-title padd-15">
           I'M VERY RESPONSIVE TO MESSAGES
         </h4>
+        </Fade>
         {/* <!-- Contact Form Start --> */}
         <form ref={form} onSubmit={handleSubmit}>
           <div className="row">
@@ -138,11 +140,13 @@ export default function ContactMeData({
               </div>
               <div className="row">
                 <div className="form-item col-12 padd-15">
+                  <Fade bottom>
                   <button type="submit" className="btn">
                     {" "}
                     Send{ing} Message{" "}
                     <ClipLoader color={"white"} loading={loading} size={10} />
                   </button>
+                  </Fade>
                   <NotificationContainer />
                 </div>
               </div>
@@ -151,7 +155,7 @@ export default function ContactMeData({
         </form>
         {/* <!-- Contact Form End --> */}
       </div>
-      <ScrollUpButton />
+     
     </section>
   );
 }

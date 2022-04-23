@@ -1,6 +1,7 @@
 import React from "react";
 import { useEffect } from "react";
 import "./Sidebar.css";
+import ScrollUpButton from "react-scroll-up-button";
 
 export default function SidebarData({
   menu,
@@ -111,7 +112,9 @@ export default function SidebarData({
           </li>
         </Link>
       </ul>
-      <div className="copyright">Copyright © {year}</div>
+      <div className="copyright">Developed by Bryan Palad © {year}</div>
+      <ScrollUpButton onClick={activehomes}/>
     </div>
+    
   );
 }

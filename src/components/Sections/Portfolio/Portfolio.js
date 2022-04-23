@@ -1,6 +1,8 @@
 import React from "react";
 import "./Portfolio.css";
 import Projects from "./Projects";
+import Fade from "react-reveal/Fade";
+import MiniProjects from "./MiniProjects";
 
 export default function Portfolio() {
   return (
@@ -8,21 +10,27 @@ export default function Portfolio() {
       <div className="container">
         <div className="row">
           <div className="section-title padd-15">
-            <h2>Portfolio</h2>
+            <Fade bottom>
+              <h2>Portfolio</h2>
+            </Fade>
           </div>
         </div>
         <div className="row">
           <div className="portfolio-heading padd-15">
-            <h2>My College Projects:</h2>
+            <Fade bottom>
+              <h2>My College Projects:</h2>
+            </Fade>
           </div>
         </div>
-        <Projects/>
-        {/* <div className="row">
+        <Projects />
+        <div className="row">
           <div className="portfolio-heading padd-15">
-            <h2>Mini Projects:</h2>
+            <Fade bottom>
+              <h2>Mini Projects:</h2>
+            </Fade>
           </div>
         </div>
-        <Projects/> */}
+        <MiniProjects />
       </div>
     </section>
   );

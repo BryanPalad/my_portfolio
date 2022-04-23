@@ -8,17 +8,16 @@ import {
   ContactMe,
   Styleswitch,
 } from "./components";
-
 function App() {
   return (
     <div className="app-content">
       <SideBar />
-      <Home />
-      <AboutMe />
-      <Services />
-      <Portfolio />
-      <ContactMe />
-      <Styleswitch />
+      <Home/>
+      <AboutMe/>
+      <Services/>
+      <Portfolio/>
+      <ContactMe/>
+      <Styleswitch/>
     </div>
   );
 }

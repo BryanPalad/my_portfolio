@@ -1,6 +1,6 @@
 import React from "react";
 import { Link, animateScroll as scroll } from "react-scroll";
-
+import Fade from 'react-reveal/Fade';
 export default function PersonalInfo() {
 
   const yearAge = 1999;
@@ -38,10 +38,12 @@ export default function PersonalInfo() {
       </div>
       <div className="row">
         <div className="buttons padd-15">
+          <Fade bottom>
           <a href="#" className="btn">
             {" "}
             Download CV
           </a>
+          </Fade>
           <Link
             activeClass="active"
             to="contact-title"
@@ -50,9 +52,11 @@ export default function PersonalInfo() {
             offset={-70}
             duration={500}
           >
+            <Fade bottom>
             <a href="#contact" className="btn hire-me">
               Hire Me
             </a>
+            </Fade>
           </Link>
         </div>
       </div>

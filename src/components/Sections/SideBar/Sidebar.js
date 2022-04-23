@@ -3,7 +3,7 @@ import "./Sidebar.css";
 import { Link, animateScroll as scroll } from "react-scroll";
 import SidebarData from "./SidebarData";
 
-export default function Sidebar() {
+export default function Sidebar(props) {
   const date = new Date();
   const year = date.getFullYear();
   const [activehome, setActivehome] = useState("active");
@@ -15,7 +15,7 @@ export default function Sidebar() {
   const [open, setOpen] = useState(document.querySelector(".nav-toggler"));
 
 
-  const menu = () => {
+  const menu = () => { 
     setOpen(document.querySelector(".aside").classList.toggle("open"));
   };
 
