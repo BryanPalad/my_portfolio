@@ -8,7 +8,7 @@ export default function Services() {
         <div className="row">
           <div className="section-title padd-15">
             <Fade bottom>
-            <h2>Services</h2>
+              <h2>Services</h2>
             </Fade>
           </div>
         </div>
@@ -20,11 +20,11 @@ export default function Services() {
                 <i className="fa fa-mobile-alt"></i>
               </div>
               <Fade bottom>
-              <h4>Web Development</h4>
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil
-                velit ab itaque.
-              </p>
+                <h4>Web Development</h4>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Nihil velit ab itaque.
+                </p>
               </Fade>
             </div>
           </div>
@@ -36,11 +36,11 @@ export default function Services() {
                 <i className="fa fa-laptop-code"></i>
               </div>
               <Fade bottom>
-              <h4>Responsive Web Design</h4>
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil
-                velit ab itaque.
-              </p>
+                <h4>Responsive Web Design</h4>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Nihil velit ab itaque.
+                </p>
               </Fade>
             </div>
           </div>
@@ -52,11 +52,11 @@ export default function Services() {
                 <i className="fa fa-palette"></i>
               </div>
               <Fade bottom>
-              <h4>Web Design</h4>
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil
-                velit ab itaque.
-              </p>
+                <h4>Web Design</h4>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Nihil velit ab itaque.
+                </p>
               </Fade>
             </div>
           </div>
@@ -68,11 +68,11 @@ export default function Services() {
                 <i className="fa fa-code"></i>
               </div>
               <Fade bottom>
-              <h4>Web Design</h4>
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil
-                velit ab itaque.
-              </p>
+                <h4>Web Design</h4>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Nihil velit ab itaque.
+                </p>
               </Fade>
             </div>
           </div>
@@ -84,11 +84,11 @@ export default function Services() {
                 <i className="fa fa-search"></i>
               </div>
               <Fade bottom>
-              <h4>Web Design</h4>
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil
-                velit ab itaque.
-              </p>
+                <h4>Web Design</h4>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Nihil velit ab itaque.
+                </p>
               </Fade>
             </div>
           </div>
@@ -100,11 +100,11 @@ export default function Services() {
                 <i className="fa fa-bullhorn"></i>
               </div>
               <Fade bottom>
-              <h4>Web Design</h4>
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil
-                velit ab itaque.
-              </p>
+                <h4>Web Design</h4>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Nihil velit ab itaque.
+                </p>
               </Fade>
             </div>
           </div>

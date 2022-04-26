@@ -71,7 +71,7 @@ export default function MiniProjects() {
             <div className="links">
               <a
                 className="view-demo"
-                href="http://localhost:8080/I.TSpec%20Appointment%20System/index.php"
+                href="https://reactjscalculator1.netlify.app/"
                 target="_blank"
               >
                 Demo <i className="fa-solid fa-eye"></i>
@@ -88,6 +88,7 @@ export default function MiniProjects() {
         </div>
       </div>
       </Fade>
+
       <div className="portfolio-item padd-15">
         <div className="portfolio-item-inner shadow-dark">
           <div className="portfolio-img">
@@ -95,7 +96,7 @@ export default function MiniProjects() {
             <div className="links">
               <a
                 className="view-demo"
-                href="https://github.com/BryanPalad/Cryptoverse"
+                href="https://teslacloneui.netlify.app/"
                 target="_blank"
               >
                 Demo <i className="fa-solid fa-eye"></i>
@@ -111,6 +112,7 @@ export default function MiniProjects() {
           </div>
         </div>
       </div>
+
       <div className="portfolio-item padd-15">
         <div className="portfolio-item-inner shadow-dark">
           <div className="portfolio-img">
@@ -118,7 +120,7 @@ export default function MiniProjects() {
             <div className="links">
               <a
                 className="view-demo"
-                href="https://github.com/BryanPalad/Cryptoverse"
+                href="https://cryptoversemini.netlify.app/"
                 target="_blank"
               >
                 Demo <i className="fa-solid fa-eye"></i>

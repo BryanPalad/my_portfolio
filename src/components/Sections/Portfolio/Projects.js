@@ -67,7 +67,6 @@ export default function Projects() {
               title={title}
               description={description}
             />
-
             <div className="links">
               <a
                 className="view-demo"

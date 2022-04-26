@@ -37,7 +37,7 @@ export default function SidebarData({
           offset={-70}
           duration={500}
         >
-          <li>
+          <li> 
             <a href="#home" className={activehome} onClick={activehomes}>
               <i className="fa fa-home"></i> Home
             </a>

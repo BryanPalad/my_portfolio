@@ -126,6 +126,7 @@ ul
     background: var(--skin-color);
     transition: all 0.3s ease;
     border: none;
+    cursor: pointer;
 }
 .btn:hover 
 {
