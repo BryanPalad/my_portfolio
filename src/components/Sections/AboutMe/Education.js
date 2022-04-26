@@ -1,5 +1,5 @@
 import React from "react";
-import "./AboutMe.css";
+import "./Education.css";
 import Fade from "react-reveal/Fade";
 
 export default function Education() {
@@ -23,11 +23,12 @@ export default function Education() {
                 >
                   <img src="../../../images/STI.png"></img>
                 </a>
-                <p className="timeline-text">
+                <p className="timeline-text" id="school">
                   Bachelor of Science in Information Technology
                 </p>
               </Fade>
             </div>
+
             <div className="timeline-item">
               <div className="circle-dot"></div>
               <h3 className="timeline-date">
@@ -46,6 +47,7 @@ export default function Education() {
                 </p>
               </Fade>
             </div>
+
             <div className="timeline-item">
               <div className="circle-dot"></div>
               <h3 className="timeline-date">

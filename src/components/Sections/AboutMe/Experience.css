@@ -1,0 +1,8 @@
+@media (max-width: 767px)
+{   
+    .about .about-content .experience
+    {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}

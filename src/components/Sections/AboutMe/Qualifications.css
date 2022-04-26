@@ -1,0 +1,29 @@
+.about .about-content .qualifications
+{
+    flex: 0 0 40%;
+    max-width: 40%;
+    margin-top: 40px;
+}
+.about .about-content .qualifications .qualifications-info
+{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.about .about-content .qualifications .qualifications-info h3
+{   
+    margin-left: 20px;
+    line-height: 45px;
+    font-weight: 600;
+    font-size: 17px;
+    color: var(--text-black-700);
+    text-transform: capitalize;
+}
+@media (max-width: 767px)
+{   
+    .about .about-content .qualifications
+    {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+}

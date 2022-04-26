@@ -1,6 +1,5 @@
 import React from 'react'
-import './AboutMe.css';
-
+import './Qualifications.css';
 export default function Qualifications() {
   return (
     <div className="qualifications padd-15">
@@ -15,3 +14,4 @@ export default function Qualifications() {
     </div>
   )
 }
+ 

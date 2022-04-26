@@ -55,7 +55,7 @@ export default function MiniProjects() {
         <div className="portfolio-item-inner shadow-dark">
           <div className="portfolio-img">
             <img
-              src="images/portfolio/FernandezDentalClinic.PNG"
+              src="images/portfolio/Calculator.PNG"
               alt="portfolio"
               onClick={handleOpen}
               title="view details"
@@ -78,7 +78,7 @@ export default function MiniProjects() {
               </a>
               <a
                 className="view-git"
-                href="https://github.com/BryanPalad/FernandezDentalClinic"
+                href="https://github.com/BryanPalad/calculator_reactjs"
                 target="_blank"
               >
                 Github <i className="fab fa-github"></i>
@@ -88,11 +88,10 @@ export default function MiniProjects() {
         </div>
       </div>
       </Fade>
-      
       <div className="portfolio-item padd-15">
         <div className="portfolio-item-inner shadow-dark">
           <div className="portfolio-img">
-            <img src="images/portfolio/FDC_dashboard.PNG" alt="portfolio" />
+            <img src="images/portfolio/Tesla-clone.PNG" alt="portfolio" />
             <div className="links">
               <a
                 className="view-demo"
@@ -103,7 +102,7 @@ export default function MiniProjects() {
               </a>
               <a
                 className="view-git"
-                href="https://github.com/BryanPalad/Cryptoverse"
+                href="https://github.com/BryanPalad/Tesla-clone"
                 target="_blank"
               >
                 Github <i className="fab fa-github"></i>

@@ -6,7 +6,7 @@ import Education from "./Education";
 import Experience from "./Experience";
 import TrainingsAndCert from "./TrainingsAndCert";
 import "./AboutMe.css";
-import Fade from 'react-reveal/Fade';
+import Fade from "react-reveal/Fade";
 
 export default function AboutMe() {
   return (
@@ -15,7 +15,7 @@ export default function AboutMe() {
         <div className="row">
           <div className="section-title padd-15">
             <Fade bottom>
-            <h2>About Me</h2>
+              <h2>About Me</h2>
             </Fade>
           </div>
         </div>
@@ -24,16 +24,11 @@ export default function AboutMe() {
             <div className="row">
               <div className="about-text padd-15">
                 <Fade bottom>
-                <h3>
-                  I'm Bryan Palad and<span> Web Developer</span>
-                </h3>
+                  <h3>
+                    I'm Bryan Palad and a<span> Web Developer</span>
+                  </h3>
                 </Fade>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat.
-                </p>
+                <p>BSIT Graduate year 2019 from STI College Calamba,</p>
               </div>
             </div>
             <div className="row">
@@ -46,10 +41,10 @@ export default function AboutMe() {
             <div className="row">
               <Education />
               <div className="expiandcerts">
-              <Experience/>
-              <TrainingsAndCert/>
+                <Experience />
+                <TrainingsAndCert />
               </div>
-              </div>
+            </div>
           </div>
         </div>
       </div>

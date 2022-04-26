@@ -2,44 +2,42 @@ import React from "react";
 import "./Home.css";
 import Typical from "react-typical";
 import { Link, animateScroll as scroll } from "react-scroll";
-import Fade from 'react-reveal/Fade';
+import Fade from "react-reveal/Fade";
 
 export default function Home() {
   return (
-    
     <section className="home section" id="home">
       <div className="container">
         <div className="row">
           <div className="home-info padd-15">
             <Fade bottom>
-            <h3 className="hello">
-              Hello, my name is <span className="name">Bryan Palad</span>
-            </h3>
-            <h3 className="my-profession">
-              I'm a
-              <span className="typing" style={{ fontSize: "28px" }}>
-                <Typical
-                  wrapper="h3.my-profession"
-                  loop={Infinity}
-                  steps={[
-                    " IT Graduate 👨🏼‍🎓",
-                    1000,
-                    " Web Developer 💻",
-                    1000,
-                    " Gamer 🎮",
-                    1000,
-                    " Aspiring Full Stack Dev 😀",
-                    1000,
-                  ]}
-                />
-              </span>
-            </h3>
+              <h3 className="hello">
+                Hello, my name is <span className="name">Bryan Palad</span>
+              </h3>
+              <h3 className="my-profession">
+                I'm a
+                <span className="typing" style={{ fontSize: "28px" }}>
+                  <Typical
+                    wrapper="h3.my-profession"
+                    loop={Infinity}
+                    steps={[
+                      " IT Graduate 🎓",
+                      1000,
+                      " Web Developer 💻",
+                      1000,
+                      " Gamer 🎮",
+                      1000,
+                      " Aspiring Full Stack Dev ⏳",
+                      1000,
+                    ]}
+                  />
+                </span>
+              </h3>
             </Fade>
             <p>
-              BSIT Graduate year 2019, who seeks for a challenging career with a
+              Seeking a challenging career with a
               progressive organization that provides an opportunity to
-              capitalize my programming/technical skills and I am an ASPIRING FULL STACK
-              DEVELOPER in my future career.
+              capitalize my programming/technical skills & abilities in IT field. I'm also an Aspiring Full Stack Developer.
             </p>
             <Link
               activeClass="active"
@@ -50,9 +48,9 @@ export default function Home() {
               duration={500}
             >
               <Fade bottom>
-              <a href="#contact" id="hiremebtn" className="btn hire-me">
-                Hire Me
-              </a>
+                <a href="#contact" id="hiremebtn" className="btn hire-me">
+                  Hire Me
+                </a>
               </Fade>
             </Link>
           </div>
@@ -62,6 +60,5 @@ export default function Home() {
         </div>
       </div>
     </section>
-    
   );
 }

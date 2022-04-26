@@ -141,7 +141,7 @@ export default function ContactMeData({
               <div className="row">
                 <div className="form-item col-12 padd-15">
                   <Fade bottom>
-                  <button type="submit" className="btn">
+                  <button type="submit" className="btn" style={{cursor: 'pointer'}}>
                     {" "}
                     Send{ing} Message{" "}
                     <ClipLoader color={"white"} loading={loading} size={10} />

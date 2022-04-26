@@ -8,7 +8,7 @@ export default function Styleswitch() {
 
   const styleSwitcherToggle = () => {
     setOpen(document.querySelector(".style-switcher").classList.toggle("open"));
-    
+
     window.addEventListener("scroll", () => {
       if (
         document.querySelector(".style-switcher").classList.contains("open")
@@ -40,7 +40,7 @@ export default function Styleswitch() {
       }
     });
   }
-  
+
   return (
     <div className="style-switcher">
       <div className="style-switcher-toggler s-icon">

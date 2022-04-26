@@ -1,9 +1,12 @@
 import React from "react";
-import Fade from 'react-reveal/Fade';
+import Fade from "react-reveal/Fade";
+import "./Skills.css";
 
 export default function Skills() {
+  const proficient = ["html.png", "css.png", "javascript.png", "bootstrap.png"];
+  const knowledgeable = ["react.png", "vuejs.png", "c-sharp.png", "php.png"];
+  const toolsused = ["github.png", "vscode.png", "mysql.png"];
   return (
-    
     <div className="skills padd-15">
       <h3 className="title">Technical Skills</h3>
       <div className="row">
@@ -11,10 +14,9 @@ export default function Skills() {
           <div classname="proficient-skill">
             <h4>Proficient in</h4>
             <Fade bottom>
-            <img src="../../../images/html.png"></img>
-            <img src="../../../images/css.png"></img>
-            <img src="../../../images/javascript.png"></img>
-            <img src="../../../images/bootstrap.png"></img>
+              {proficient.map((value, index) => {
+                return <img key={index} src={`../../../images/${value}`}></img>;
+              })}
             </Fade>
           </div>
         </div>
@@ -22,10 +24,9 @@ export default function Skills() {
           <div className="basic-skill">
             <h4>Basic Knowledge</h4>
             <Fade bottom>
-            <img src="../../../images/react.png"></img>
-            <img src="../../../images/vuejs.png"></img>
-            <img src="../../../images/c-sharp.png"></img>
-            <img src="../../../images/php.png"></img>
+              {knowledgeable.map((value, index) => {
+                return <img key={index} src={`../../../images/${value}`}></img>;
+              })}
             </Fade>
           </div>
         </div>
@@ -33,9 +34,9 @@ export default function Skills() {
           <div className="tools-used">
             <h4>Database / Tools Used</h4>
             <Fade bottom>
-            <img src="../../../images/github.png"></img>
-            <img src="../../../images/vscode.png"></img>
-            <img src="../../../images/mysql.png"></img>
+              {toolsused.map((value, index) => {
+                return <img key={index} src={`../../../images/${value}`}></img>;
+              })}
             </Fade>
           </div>
         </div>

@@ -1,0 +1,22 @@
+.about .about-content .education
+{
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin-top: 30px;
+}
+.education img
+{
+    height: 15%;
+    width: 15%;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+@media (max-width: 767px)
+{   
+    .about .about-content .education
+    {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}

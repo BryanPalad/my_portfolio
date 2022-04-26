@@ -47,7 +47,7 @@
     border-radius: 5px;
     padding: 2px 5px;
     position: absolute;
-    left: 22%;
+    left: 15%;
     bottom: 10%;
     font-size: 20px;
     color: black;
@@ -59,7 +59,7 @@
     border-radius: 5px;
     padding: 2px 5px;
     position: absolute;
-    right: 22%;
+    right: 15%;
     bottom: 10%;
     font-size: 20px;
     color: black;
@@ -149,6 +149,21 @@
     font-size: 30px;
 }
 /*RESPONSIVE*/
+@media (max-width: 1198px)
+{
+    .portfolio .portfolio-item-inner .portfolio-img .links .view-demo
+    {
+        position: absolute;
+        left: 15%;
+        opacity: 1;
+    }
+    .portfolio .portfolio-item-inner .portfolio-img .links .view-git
+    {
+        position: absolute;
+        right: 15%;
+        opacity: 1;
+    }
+}
 @media (max-width: 991px)
 {   
     .portfolio .portfolio-item
@@ -189,6 +204,18 @@
         max-width: 15%;
         height: 35px;
         width: 10px;
+    }
+    .portfolio .portfolio-item-inner .portfolio-img .links .view-demo
+    {
+        position: absolute;
+        left: 15%;
+        opacity: 1;
+    }
+    .portfolio .portfolio-item-inner .portfolio-img .links .view-git
+    {
+        position: absolute;
+        right: 15%;
+        opacity: 1;
     }
    
 }

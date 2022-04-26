@@ -1,20 +1,14 @@
 import "./App.css";
-import {
-  SideBar,
-  Home,
-  AboutMe,
-  Services,
-  Portfolio,
-  ContactMe,
-  Styleswitch,
-} from "./components";
+import {SideBar,Home,AboutMe,Services,
+Portfolio,ContactMe,Styleswitch} from "./components";
+
 function App() {
   return (
     <div className="app-content">
       <SideBar />
       <Home/>
       <AboutMe/>
-      <Services/>
+      {/* <Services/> */}
       <Portfolio/>
       <ContactMe/>
       <Styleswitch/>

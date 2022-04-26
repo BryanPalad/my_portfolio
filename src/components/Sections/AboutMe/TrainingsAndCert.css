@@ -1,0 +1,17 @@
+.about .about-content .trainings
+{
+    margin-top: 50px;
+}
+.simplilearn a 
+{
+    color: var(--text-black-700);
+    font-size: 16px;
+}
+@media (max-width: 767px)
+{   
+    .about .about-content .trainings
+    {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
