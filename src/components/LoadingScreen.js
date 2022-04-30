@@ -13,15 +13,11 @@ const defaultOptions1 = {
 };
 function LoadingScreen() {
   const [completed, setCompleted] = useState(undefined);
-  const [loading, setLoading] = useState(undefined);
 
   useEffect(() => {
     setTimeout(() => {
-      setLoading(true);
-      setTimeout(() => {
         setCompleted(true);
-      }, 1000);
-    }, 2000);
+    }, 2500);
   }, []);
 
   return (
