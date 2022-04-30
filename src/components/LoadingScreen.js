@@ -27,12 +27,14 @@ function LoadingScreen() {
   return (
     <>
       {!completed ? (
+        <div className="container" style={{justifyContent: 'center', alignItems: 'center'}}>
         <Lottie
           options={defaultOptions1}
-          style={{ marginTop: "20%" }}
-          height={200}
-          width={200}
+          style={{ marginTop: "28%" }}
+          height={300}
+          width={300}
         />
+        </div>
       ) : (
         <>
           <App />
