@@ -9,6 +9,7 @@ export default function Education() {
       <div className="row">
         <div className="timeline-box padd-15">
           <div className="timeline shadow-dark">
+            {/* education item start */}
             <div className="timeline-item">
               <div className="circle-dot"></div>
               <h3 className="timeline-date">
@@ -16,19 +17,21 @@ export default function Education() {
               </h3>
               <Fade bottom>
                 <h4 className="timeline-title">College Level</h4>
-
-                <a
-                  href="https://www.sti.edu/campuses-details.asp?campus_id=CAL"
-                  target="_blank"
-                >
-                  <img src="../../../images/STI.png"></img>
-                </a>
-                <p className="timeline-text" id="school">
-                  Bachelor of Science in Information Technology
-                </p>
+                <div className="education-item">
+                  <a
+                    href="https://www.sti.edu/campuses-details.asp?campus_id=CAL"
+                    target="_blank"
+                  >
+                    <img src="../../../images/STI.png"></img>
+                  </a>
+                  <span className="timeline-text">
+                    STI College Calamba (BSIT)
+                  </span>
+                </div>
               </Fade>
             </div>
-
+            {/* education item end */}
+            {/* education item start */}
             <div className="timeline-item">
               <div className="circle-dot"></div>
               <h3 className="timeline-date">
@@ -36,18 +39,21 @@ export default function Education() {
               </h3>
               <Fade bottom>
                 <h4 className="timeline-title">Secondary Level</h4>
-                <a
-                  href="http://stvincentcollege.edu.ph/index.html"
-                  target="_blank"
-                >
-                  <img src="../../../images/svcc.jpg"></img>
-                </a>
-                <p className="timeline-text">
-                  Saint Vincent College of Cabuyao
-                </p>
+                <div className="education-item">
+                  <a
+                    href="http://stvincentcollege.edu.ph/index.html"
+                    target="_blank"
+                  >
+                    <img src="../../../images/svcc.jpg"></img>
+                  </a>
+                  <span className="timeline-text">
+                    Saint Vincent College of Cabuyao
+                  </span>
+                </div>
               </Fade>
             </div>
-
+            {/* education item end */}
+            {/* education item start */}
             <div className="timeline-item">
               <div className="circle-dot"></div>
               <h3 className="timeline-date">
@@ -55,14 +61,17 @@ export default function Education() {
               </h3>
               <Fade bottom>
                 <h4 className="timeline-title">Primary Level</h4>
-                <a href="https://www.sjiscph.com/" target="_blank">
-                  <img src="../../../images/sjisc.webp"></img>
-                </a>
-                <p className="timeline-text">
-                  Saint Jerome Integrated School of Cabuyao
-                </p>
+                <div className="education-item">
+                  <a href="https://www.sjiscph.com/" target="_blank">
+                    <img src="../../../images/sjisc.webp"></img>
+                  </a>
+                  <span className="timeline-text">
+                    Saint Jerome Integrated School of Cabuyao
+                  </span>
+                </div>
               </Fade>
             </div>
+            {/* education item end */}
           </div>
         </div>
       </div>

@@ -18,12 +18,29 @@
     color: var(--text-black-700);
     text-transform: capitalize;
 }
+.qualifications .qualifications-info
+{
+    border-left: 3px solid var(--skin-color);
+    height: 220px;
+}
+@media (max-width: 1199px)
+{
+    .qualifications .qualifications-info
+    {
+        border-left: 3px solid var(--skin-color);
+        height: 290px;
+    }
+}
 @media (max-width: 767px)
 {   
     .about .about-content .qualifications
     {
         flex: 0 0 100%;
         max-width: 100%;
+    }
+    .qualifications .qualifications-info
+    {
+       border: none;
     }
 
 }

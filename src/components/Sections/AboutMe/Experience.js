@@ -18,11 +18,13 @@ export default function Experience() {
               </h3>
               <Fade bottom>
                 <h4 className="timeline-title">
-                  Quality Management System (QMS) / Document Controller /
-                  Inventory Controller{" "}
+                 Admin Office Staff
                 </h4>
                 <p className="timeline-text">
-                  Triple Star Packaging Corporation
+                 <b>Quality Management System (QMS) Assistant</b> - in charge of incoming and outgoing of raw materials through ERP system.
+                </p>
+                <p className="timeline-text">
+                  <b>Inventory Controller</b> - in charge of incoming and outgoing of raw materials through ERP system.
                 </p>
               </Fade>
             </div>

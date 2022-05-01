@@ -19,7 +19,6 @@ h3.hello
 h3.hello span 
 {
     font-family: Poppins;
-    /* font-family: 'Clicker Script', cursive; */
     font-size: 25px;
     font-weight: 700;
     color: var(--skin-color);
@@ -48,8 +47,8 @@ h3.my-profession span
     border-radius: 5px;
     width: 320px;
     height: 320px;
-    background-image:url('https://c.tenor.com/C_nJg-iEolcAAAAd/goku-ultra-instinct.gif');
-    /* background-image: url(../../../../public/images/gradpic.jpg); */
+    /* background-image:url('https://c.tenor.com/C_nJg-iEolcAAAAd/goku-ultra-instinct.gif'); */
+    background-image: url(../../../../public/images/gradpic.jpg);
     background-size: cover;
 }
 .typing
