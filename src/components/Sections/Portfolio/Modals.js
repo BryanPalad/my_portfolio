@@ -91,6 +91,7 @@ export default function Modals({
                           className="demo"
                           href="http://localhost:8080/I.TSpec%20Appointment%20System/index.php"
                           target="_blank"
+                          rel="noreferrer"
                         >
                           Demo <i className="fa-solid fa-eye"></i>
                         </a>
@@ -98,6 +99,7 @@ export default function Modals({
                           className="git"
                           href="https://github.com/BryanPalad/FernandezDentalClinic"
                           target="_blank"
+                          rel="noreferrer"
                         >
                           Github <i className="fab fa-github"></i>
                         </a>

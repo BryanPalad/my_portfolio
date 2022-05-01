@@ -15,7 +15,7 @@ export default function Skills() {
             <h4>Proficient in</h4>
             <Fade bottom>
               {proficient.map((value, index) => {
-                return <img key={index} src={`../../../images/${value}`}></img>;
+                return <img key={index} src={`../../../images/${value}`} alt="skills"></img>;
               })}
             </Fade>
           </div>
@@ -25,7 +25,7 @@ export default function Skills() {
             <h4>Basic Knowledge</h4>
             <Fade bottom>
               {knowledgeable.map((value, index) => {
-                return <img key={index} src={`../../../images/${value}`}></img>;
+                return <img key={index} src={`../../../images/${value}`} alt="skills"></img>;
               })}
             </Fade>
           </div>
@@ -35,7 +35,7 @@ export default function Skills() {
             <h4>Database / Tools Used</h4>
             <Fade bottom>
               {toolsused.map((value, index) => {
-                return <img key={index} src={`../../../images/${value}`}></img>;
+                return <img key={index} src={`../../../images/${value}`} alt="skills"></img>;
               })}
             </Fade>
           </div>

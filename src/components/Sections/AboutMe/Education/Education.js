@@ -44,8 +44,8 @@ export default function Education() {
                   <Fade bottom>
                     <h4 className="timeline-title">{level}</h4>
                     <div className="education-item">
-                      <a href={links} target="_blank">
-                        <img src={images}></img>
+                      <a href={links} target="_blank" rel="noreferrer">
+                        <img src={images} alt="school"></img>
                       </a>
                       <span className="timeline-text">{school}</span>
                     </div>

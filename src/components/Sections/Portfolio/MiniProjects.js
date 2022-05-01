@@ -27,12 +27,12 @@ export default function MiniProjects() {
             <div className="portfolio-item padd-15">
               <div className="portfolio-item-inner shadow-dark">
                 <div className="portfolio-img">
-                  <img src={images} alt="portfolio image" />
+                  <img src={images} alt="portfolio" />
                   <div className="links">
-                    <a className="view-demo" href={demo} target="_blank">
+                    <a className="view-demo" href={demo} target="_blank" rel="noreferrer">
                       Demo <i className="fa-solid fa-eye"></i>
                     </a>
-                    <a className="view-git" href={github} target="_blank">
+                    <a className="view-git" href={github} target="_blank" rel="noreferrer">
                       Github <i className="fab fa-github"></i>
                     </a>
                   </div>
