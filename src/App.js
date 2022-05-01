@@ -8,7 +8,7 @@ function App() {
       <SideBar />
       <Home/>
       <AboutMe/>
-      <Services/>
+      {/* <Services/> */}
       <Portfolio/>
       <ContactMe/>
       <Styleswitch/>
