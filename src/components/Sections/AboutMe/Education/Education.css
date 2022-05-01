@@ -16,11 +16,12 @@
 {
     padding-left: 10%;
     vertical-align: middle;
+    font-weight: 600;
 }
 .education img
 {
-    height: 20%;
-    width: 20%;
+    height: 18%;
+    width: 18%;
     margin-bottom: 10px;
     cursor: pointer;
 }

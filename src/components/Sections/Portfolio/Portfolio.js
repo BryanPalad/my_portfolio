@@ -18,19 +18,19 @@ export default function Portfolio() {
         <div className="row">
           <div className="portfolio-heading padd-15">
             <Fade bottom>
-              <h2>My College Projects:</h2>
-            </Fade>
-          </div>
-        </div>
-        <Projects />
-        <div className="row">
-          <div className="portfolio-heading padd-15">
-            <Fade bottom>
               <h2>Mini Projects:</h2>
             </Fade>
           </div>
         </div>
         <MiniProjects />
+        <div className="row">
+          <div className="portfolio-heading padd-15">
+            <Fade bottom>
+              <h2>My College Projects:</h2>
+            </Fade>
+          </div>
+        </div>
+        <Projects />
       </div>
     </section>
   );

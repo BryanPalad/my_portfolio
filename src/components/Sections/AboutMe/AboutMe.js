@@ -1,10 +1,10 @@
 import React from "react";
-import Skills from "./Skills";
-import PersonalInfo from "./PersonalInfo";
-import Qualifications from "./Qualifications";
-import Education from "./Education";
-import Experience from "./Experience";
-import TrainingsAndCert from "./TrainingsAndCert";
+import Skills from "./Skills/Skills";
+import PersonalInfo from "./PersonalInfo/PersonalInfo";
+import Qualifications from "./Qualifications/Qualifications";
+import Education from "./Education/Education";
+import Experience from "./Experience/Experience";
+import TrainingsAndCert from "./TrainingsAndCert/TrainingsAndCert";
 import "./AboutMe.css";
 import Fade from "react-reveal/Fade";
 
@@ -28,7 +28,7 @@ export default function AboutMe() {
                     I'm Bryan Palad and a<span> Web Developer</span>
                   </h3>
                 </Fade>
-                <p>BSIT Graduate year 2019 from STI College Calamba,</p>
+                <p>BSIT Graduate year 2019 from STI College Calamba, who aims to be a full stack developer in my future career.</p>
               </div>
             </div>
             <div className="row">

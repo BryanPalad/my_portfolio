@@ -47,8 +47,8 @@ h3.my-profession span
     border-radius: 5px;
     width: 320px;
     height: 320px;
-    /* background-image:url('https://c.tenor.com/C_nJg-iEolcAAAAd/goku-ultra-instinct.gif'); */
-    background-image: url(../../../../public/images/gradpic.jpg);
+    background-image:url('https://c.tenor.com/C_nJg-iEolcAAAAd/goku-ultra-instinct.gif');
+    /* background-image: url(../../../../public/images/gradpic.jpg); */
     background-size: cover;
 }
 .typing

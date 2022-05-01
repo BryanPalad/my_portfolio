@@ -1,8 +1,9 @@
 import React from "react";
 import "./Home.css";
 import Typical from "react-typical";
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 import Fade from "react-reveal/Fade";
+import HomeData from "./HomeData";
 
 export default function Home() {
   return (
@@ -34,22 +35,18 @@ export default function Home() {
                 </span>
               </h3>
             </Fade>
-            <p>
-              Seeking a challenging career with a
-              progressive organization that provides an opportunity to
-              capitalize my programming/technical skills & abilities in IT field. I'm also an Aspiring Full Stack Developer.
-            </p>
+            <HomeData/>
             <Link
               activeClass="active"
-              to="contact-title"
+              to="about section"
               spy={true}
               smooth={true}
               offset={-70}
               duration={500}
             >
               <Fade bottom>
-                <a href="#contact" id="hiremebtn" className="btn hire-me">
-                  Hire Me
+                <a href="#about" id="hiremebtn" className="btn hire-me">
+                  Learn More
                 </a>
               </Fade>
             </Link>
