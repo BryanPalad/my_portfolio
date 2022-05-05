@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import "./ContactMe.css";
+import Swal from 'sweetalert2';
 import emailjs from "@emailjs/browser";
-import {NotificationContainer,NotificationManager,} from "react-notifications";
 import ContactMeData from "./ContactMeData";
 
 export default function ContactMe() {
@@ -12,6 +12,37 @@ export default function ContactMe() {
   const [isSubmit, setIsSubmit] = useState(false);
   const [loading, setLoading] = useState(false);
   const [ing, setIng] = useState("");
+
+  const Toast = Swal.mixin({
+    toast: true,
+    position: 'top-end',
+    showConfirmButton: false,
+    timer: 3000,
+    timerProgressBar: true,
+    didOpen: (toast) => {
+      toast.addEventListener('mouseenter', Swal.stopTimer)
+      toast.addEventListener('mouseleave', Swal.resumeTimer)
+    }
+  })
+
+  useEffect(() => {
+    window.addEventListener('beforeunload', alertUser)
+    window.addEventListener('unload', handleTabClosing)
+    return () => {
+        window.removeEventListener('beforeunload', alertUser)
+        window.removeEventListener('unload', handleTabClosing)
+    }
+})
+    const handleTabClosing = () => {
+      window.close()
+    }
+
+    const alertUser = (event) => {
+      if(initialValues !== undefined){
+        event.preventDefault()
+        event.returnValue = ''
+      }   
+    }
 
   useEffect(() => {
     if (Object.keys(formErrors).length === 0 && isSubmit ? sendEmail() : "") {
@@ -48,7 +79,10 @@ export default function ContactMe() {
     //   );
     setTimeout(() => {
       setFormValues(initialValues);
-      NotificationManager.success("Email Sent", "Success");
+      Toast.fire({
+      icon: 'success',
+      title: 'You have successully sent an email'
+    })
       setLoading(false);
       setIng("");
     }, 3000);

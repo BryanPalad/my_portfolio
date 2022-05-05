@@ -1,7 +1,6 @@
 import React from "react";
 import "./ContactMe.css";
 import { ClipLoader } from "react-spinners";
-import { NotificationContainer, NotificationManager } from "react-notifications";
 import Fade from "react-reveal/Fade";
 
 export default function ContactMeData({
@@ -12,70 +11,82 @@ export default function ContactMeData({
   formErrors,
   ing,
   loading,
-}) 
-{
+}) {
+  const contactinfo = [
+    {
+      icon: "fa fa-phone",
+      heading: "Call/Text Me On",
+      desc: "+63 945-560-2846",
+      image: false,
+      link: false,
+      style: false,
+    },
+    {
+      icon: false,
+      heading: "Email",
+      desc: "paladbryanj@gmail.com",
+      image: "https://cdn-icons-png.flaticon.com/512/5968/5968534.png",
+      link: false,
+      style: false,
+    },
+    {
+      icon: "fab fa-facebook-square",
+      heading: "Facebook",
+      desc: "/BryanPalad.15",
+      image: "",
+      link: "https://www.facebook.com/BryanPalad.15",
+      style: true,
+    },
+    {
+      icon: "fab fa-github",
+      heading: "Github",
+      desc: "/BryanPalad",
+      image: false,
+      link: "https://github.com/BryanPalad",
+      style: true,
+    },
+  ];
   return (
     <section className="contact section" id="contact">
       <div className="container">
         <div className="row">
           <div className="section-title padd-15">
             <Fade bottom>
-            <h2 className="contactme-title">Contact Me</h2>
+              <h2 className="contactme-title">Contact Me</h2>
             </Fade>
           </div>
         </div>
         <Fade bottom>
-        <h3 className="contact-title padd-15">Do You Have Any Questions ?</h3>
-        <h4 className="contact-sub-title padd-15">I'M AT YOUR SERVICES</h4>
-        <div className="row">
-          {/* <!-- Contact info item start --> */}
-          <div className="contact-info-item padd-15">
-            <div className="icon">
-              <i className="fa fa-phone"></i>
-            </div>
-            <h4>Call/Text Me On</h4>
-            <p>+63 945-560-2846</p>
+          <h3 className="contact-title padd-15">Do You Have Any Questions ?</h3>
+          <h4 className="contact-sub-title padd-15">I'M AT YOUR SERVICES</h4>
+          <div className="row">
+            {contactinfo.map(({ icon, heading, desc, image, link, style }) => {
+              return (
+                <div className="contact-info-item padd-15">
+                  <div className="icon">
+                    {style ? (
+                      <a href={link} target="_blank" rel="noreferrer">
+                        <i className={icon} style={{ fontSize: "25px" }}></i>
+                      </a>
+                    ) : (
+                      <>
+                        <a href={link} target="_blank" rel="noreferrer">
+                          <i className={icon}></i>
+                        </a>
+                      </>
+                    )}
+                    {image ? <img src={image} alt="pic"></img> : <></>}
+                  </div>
+                  <h4>{heading}</h4>
+                  <p>{desc}</p>
+                </div>
+              );
+            })}
           </div>
-          {/* <!-- Contact info item end --> */}
-          {/* <!-- Contact info item start --> */}
-          <div className="contact-info-item padd-15">
-            <div className="icon">
-              <a href="https://www.facebook.com/BryanPalad.15" target="_blank">
-                <i
-                  className="fab fa-facebook-square"
-                  style={{ fontSize: "25px" }}
-                ></i>
-              </a>
-            </div>
-            <h4>Facebook</h4>
-            <p>/BryanPalad.15</p>
-          </div>
-          {/* <!-- Contact info item end --> */}
-          {/* <!-- Contact info item start --> */}
-          <div className="contact-info-item padd-15">
-            <div className="icon">
-              <img src="https://cdn-icons-png.flaticon.com/512/5968/5968534.png"></img>
-            </div>
-            <h4>Email</h4>
-            <p>paladbryanj@gmail.com</p>
-          </div>
-          {/* <!-- Contact info item end --> */}
-          {/* <!-- Contact info item start --> */}
-          <div className="contact-info-item padd-15">
-            <div className="icon">
-              <a href="https://github.com/BryanPalad" target="_blank">
-                <i className="fab fa-github" style={{ fontSize: "25px" }}></i>
-              </a>
-            </div>
-            <h4>Github</h4>
-            <p>/BryanPalad</p>
-          </div>
-          {/* <!-- Contact info item end --> */}
-        </div>
-        <h3 className="contact-title padd-15">SEND ME AN EMAIL</h3>
-        <h4 className="contact-sub-title padd-15">
-          I'M VERY RESPONSIVE TO MESSAGES
-        </h4>
+          <h3 className="contact-title padd-15">SEND ME AN EMAIL</h3>
+          <h4 className="contact-sub-title padd-15">
+            I'M VERY RESPONSIVE TO MESSAGES
+          </h4>
         </Fade>
         {/* <!-- Contact Form Start --> */}
         <form ref={form} onSubmit={handleSubmit}>
@@ -141,13 +152,12 @@ export default function ContactMeData({
               <div className="row">
                 <div className="form-item col-12 padd-15">
                   <Fade bottom>
-                  <button type="submit" className="btn">
-                    {" "}
-                    Send{ing} Message{" "}
-                    <ClipLoader color={"white"} loading={loading} size={10} />
-                  </button>
+                    <button type="submit" className="btn">
+                      {" "}
+                      Send{ing} Message{" "}
+                      <ClipLoader color={"white"} loading={loading} size={10} />
+                    </button>
                   </Fade>
-                  <NotificationContainer />
                 </div>
               </div>
             </div>
@@ -155,7 +165,6 @@ export default function ContactMeData({
         </form>
         {/* <!-- Contact Form End --> */}
       </div>
-     
     </section>
   );
 }
