@@ -43,7 +43,7 @@
 }
 .portfolio .portfolio-item-inner .portfolio-img .links .view-demo
 {
-    border: 1px solid black;
+    border: 1.7px solid black;
     border-radius: 5px;
     padding: 2px 5px;
     position: absolute;
@@ -52,10 +52,11 @@
     font-size: 20px;
     color: black;
     opacity: 0;
+    font-weight: 500;
 }
 .portfolio .portfolio-item-inner .portfolio-img .links .view-git
 {
-    border: 1px solid black;
+    border: 1.7px solid black;
     border-radius: 5px;
     padding: 2px 5px;
     position: absolute;
@@ -64,6 +65,7 @@
     font-size: 20px;
     color: black;
     opacity: 0;
+    font-weight: 500;
 }
 .portfolio .portfolio-item-inner .portfolio-img .links .view-git:hover,
 .portfolio .portfolio-item-inner .portfolio-img .links .view-demo:hover

@@ -14,7 +14,6 @@ export default function Sidebar(props) {
 
   const [open, setOpen] = useState(document.querySelector(".nav-toggler"));
 
-
   const menu = () => { 
     setOpen(document.querySelector(".aside").classList.toggle("open"));
   };

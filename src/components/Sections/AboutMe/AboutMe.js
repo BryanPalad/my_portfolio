@@ -28,7 +28,10 @@ export default function AboutMe() {
                     I'm Bryan Palad and a<span> Web Developer</span>
                   </h3>
                 </Fade>
-                <p>BSIT Graduate year 2019 from STI College Calamba, who aims to be a full stack developer in my future career.</p>
+                <p>
+                  BSIT Graduate year 2019 from STI College Calamba, who aims to
+                  be a full stack developer in my future career.
+                </p>
               </div>
             </div>
             <div className="row">

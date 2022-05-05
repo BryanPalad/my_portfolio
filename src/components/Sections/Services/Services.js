@@ -1,7 +1,15 @@
 import React from "react";
 import "./Services.css";
 import Fade from "react-reveal/Fade";
-export default function Services() {
+export default function Services() {  
+  const services = [
+    { icon: 'fa fa-mobile-alt', title: 'Web Development', desc: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil velit ab itaque'},
+    { icon: 'fa fa-laptop-code', title: 'Responsive Web Design', desc: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil velit ab itaque'},
+    { icon: 'fa fa-palette', title: 'Web Development', desc: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil velit ab itaque'},
+    { icon: 'fa fa-code', title: 'Web Development', desc: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil velit ab itaque'},
+    { icon: 'fa fa-search', title: 'Web Development', desc: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil velit ab itaque'},
+    { icon: 'fa fa-bullhorn', title: 'Web Development', desc: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil velit ab itaque'}
+  ]
   return (
     <section className="service section" id="services">
       <div className="container">
@@ -13,102 +21,19 @@ export default function Services() {
           </div>
         </div>
         <div className="row">
-          {/* <!--Service item Start --> */}
-          <div className="service-item padd-15">
+          {services.map(({icon, title,desc}) => {
+            return <div className="service-item padd-15">
             <div className="service-item-inner">
               <div className="icon">
-                <i className="fa fa-mobile-alt"></i>
+                <i className={icon}></i>
               </div>
               <Fade bottom>
-                <h4>Web Development</h4>
-                <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Nihil velit ab itaque.
-                </p>
+                <h4>{title}</h4>
+                <p>{desc}</p>
               </Fade>
             </div>
           </div>
-          {/* <!--Service item End --> */}
-          {/* <!--Service item Start --> */}
-          <div className="service-item padd-15">
-            <div className="service-item-inner">
-              <div className="icon">
-                <i className="fa fa-laptop-code"></i>
-              </div>
-              <Fade bottom>
-                <h4>Responsive Web Design</h4>
-                <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Nihil velit ab itaque.
-                </p>
-              </Fade>
-            </div>
-          </div>
-          {/* <!--Service item End --> */}
-          {/* <!--Service item Start --> */}
-          <div className="service-item padd-15">
-            <div className="service-item-inner">
-              <div className="icon">
-                <i className="fa fa-palette"></i>
-              </div>
-              <Fade bottom>
-                <h4>Web Design</h4>
-                <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Nihil velit ab itaque.
-                </p>
-              </Fade>
-            </div>
-          </div>
-          {/* <!--Service item End --> */}
-          {/* <!--Service item Start --> */}
-          <div className="service-item padd-15">
-            <div className="service-item-inner">
-              <div className="icon">
-                <i className="fa fa-code"></i>
-              </div>
-              <Fade bottom>
-                <h4>Web Design</h4>
-                <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Nihil velit ab itaque.
-                </p>
-              </Fade>
-            </div>
-          </div>
-          {/* <!--Service item End --> */}
-          {/* <!--Service item Start --> */}
-          <div className="service-item padd-15">
-            <div className="service-item-inner">
-              <div className="icon">
-                <i className="fa fa-search"></i>
-              </div>
-              <Fade bottom>
-                <h4>Web Design</h4>
-                <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Nihil velit ab itaque.
-                </p>
-              </Fade>
-            </div>
-          </div>
-          {/* <!--Service item End --> */}
-          {/* <!--Service item Start --> */}
-          <div className="service-item padd-15">
-            <div className="service-item-inner">
-              <div className="icon">
-                <i className="fa fa-bullhorn"></i>
-              </div>
-              <Fade bottom>
-                <h4>Web Design</h4>
-                <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Nihil velit ab itaque.
-                </p>
-              </Fade>
-            </div>
-          </div>
-          {/* <!--Service item End --> */}
+          })}
         </div>
       </div>
     </section>

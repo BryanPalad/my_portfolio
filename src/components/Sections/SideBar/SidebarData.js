@@ -1,5 +1,4 @@
 import React from "react";
-import { useEffect } from "react";
 import "./Sidebar.css";
 import ScrollUpButton from "react-scroll-up-button";
 

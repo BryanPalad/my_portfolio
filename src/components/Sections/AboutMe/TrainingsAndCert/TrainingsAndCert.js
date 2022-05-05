@@ -44,7 +44,11 @@ export default function TrainingsAndCert() {
               </h3>
               <Fade bottom>
                 <h4 className="timeline-title">
-                  <a href="https://www.simplilearn.com/" target="_blank" rel="noreferrer">
+                  <a
+                    href="https://www.simplilearn.com/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <img
                       src="../images/simplilearn.png"
                       alt="Simplilearn"

@@ -35,9 +35,13 @@ export default function Experience() {
                       <p className="timeline-text">
                         <b>{titleDesc1}</b> - {desc1}
                       </p>
-                      <p className="timeline-text">
-                        <b>{titleDesc2}</b> - {desc2}
-                      </p>
+                      {desc2 && titleDesc2 ? (
+                        <p className="timeline-text">
+                          <b>{titleDesc2}</b> - {desc2}
+                        </p>
+                      ) : (
+                        <></>
+                      )}
                     </Fade>
                   </div>
                 );

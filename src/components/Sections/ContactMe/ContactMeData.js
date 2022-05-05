@@ -2,7 +2,6 @@ import React from "react";
 import "./ContactMe.css";
 import { ClipLoader } from "react-spinners";
 import Fade from "react-reveal/Fade";
-
 export default function ContactMeData({
   form,
   handleSubmit,
@@ -111,7 +110,7 @@ export default function ContactMeData({
                     <input
                       type="text"
                       className="form-control"
-                      placeholder="Email"
+                      placeholder="Your Email"
                       name="email"
                       value={formValues.email}
                       onChange={handleChange}

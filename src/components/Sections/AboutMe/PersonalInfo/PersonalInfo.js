@@ -13,13 +13,13 @@ export default function PersonalInfo() {
   return (
     <div className="personal-info padd-15">
       <div className="row">
-        <PersonalInfoData age={age}/>
+        <PersonalInfoData age={age} />
       </div>
       <div className="row">
         <div className="buttons padd-15">
           <Fade bottom>
             {/* for downloading cv */}
-          {/* <a href="/images/myw3schoolsimage.jpg" download></a> */}
+            {/* <a href="/images/myw3schoolsimage.jpg" download></a> */}
             <a href="#" className="btn">
               {" "}
               Download CV
