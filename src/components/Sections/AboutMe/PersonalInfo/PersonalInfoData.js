@@ -35,7 +35,7 @@ export default function PersonalInfoData({ age }) {
     {
       icon: "fa-solid fa-phone",
       desc: "Phone :",
-      span: "Brgy. Banlic Cabuyao",
+      span: "+63-945-560-2846",
       style: false,
     },
     {

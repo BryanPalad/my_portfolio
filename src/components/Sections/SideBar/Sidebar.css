@@ -91,33 +91,6 @@
     justify-content: center;
 
 }
-
-/* x button */
-/* .aside .nav-toggler span::before 
-{
-    content: '';
-    height: 2px;
-    width: 25px;
-    background: var(--skin-color);
-    position: absolute;
-    top: 18px;
-    left: 10px;
-    transform: rotate(-140deg);
-
-}
-.aside .nav-toggler span::after 
-{
-    content: '';
-    height: 2px;
-    width: 25px;
-    background: var(--skin-color);
-    position: absolute;
-    top: 18px;
-    left: 10px;
-    transform: rotate(-40deg);
-
-} */
-/* burger menu */
 .aside .nav-toggler span 
 {   
     left: 12px;

@@ -11,8 +11,7 @@ export default function Sidebar(props) {
   const [activeservices, setActiveservices] = useState("");
   const [activeportfolio, setActiveportfolio] = useState("");
   const [activecontact, setActivecontact] = useState("");
-
-  const [open, setOpen] = useState(document.querySelector(".nav-toggler"));
+  const [open, setOpen] = useState(document.querySelector(".aside"));
 
   const menu = () => { 
     setOpen(document.querySelector(".aside").classList.toggle("open"));

@@ -15,12 +15,12 @@ export default function SidebarData({
   activeportfolios,
   activecontact,
   activecontacts,
-  year
+  year,
 }) {
   return (
     <div className="aside">
       <div className="logo">
-        <a href="#">
+        <a href="#home" onClick={activehomes}>
           <span>BS</span>IT
         </a>
       </div>
@@ -36,12 +36,13 @@ export default function SidebarData({
           offset={-70}
           duration={500}
         >
-          <li> 
+          <li>
             <a href="#home" className={activehome} onClick={activehomes}>
               <i className="fa fa-home"></i> Home
             </a>
           </li>
         </Link>
+
         <Link
           activeClass="active"
           to="about section"
@@ -112,8 +113,9 @@ export default function SidebarData({
         </Link>
       </ul>
       <div className="copyright">Developed by Bryan Palad © {year}</div>
-      <ScrollUpButton onClick={activehomes}/>
+      <span onClick={activehomes}>
+        <ScrollUpButton />
+      </span>
     </div>
-    
   );
 }
