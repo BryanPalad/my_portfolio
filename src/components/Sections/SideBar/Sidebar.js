@@ -13,17 +13,27 @@ export default function Sidebar(props) {
   const [activecontact, setActivecontact] = useState("");
   const [open, setOpen] = useState(document.querySelector(".aside"));
 
-  const menu = () => { 
+  useEffect(() => {
+    function handleResize() {
+      if (window.innerWidth <= 1198) {
+        setOpen(document.querySelector(".aside").classList.remove("open"));
+      }
+    }
+    window.addEventListener("resize", handleResize);
+  });
+
+  const menu = () => {
     setOpen(document.querySelector(".aside").classList.toggle("open"));
   };
 
   const activehomes = () => {
     setActivehome("active");
     setActiveabout("");
-    setActiveservices("");
+    setActiveservices("");  
     setActiveportfolio("");
     setActivecontact("");
     setOpen(!document.querySelector(".aside").classList.toggle("open"));
+    setOpen(document.querySelector(".aside").classList.remove("open"));
   };
   const activeabouts = () => {
     setActivehome("");

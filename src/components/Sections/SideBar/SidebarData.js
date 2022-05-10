@@ -15,7 +15,7 @@ export default function SidebarData({
   activeportfolios,
   activecontact,
   activecontacts,
-  year,
+  year
 }) {
   return (
     <div className="aside">

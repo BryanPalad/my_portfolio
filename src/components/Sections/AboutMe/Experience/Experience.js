@@ -6,9 +6,9 @@ export default function Experience() {
   const experience = [
     {
       date: `Oct. 15 2019 - Jan. 15 2022 (2yrs & 3 months)`,
-      position: "Admin Office Staff",
-      titleDesc1: "Quality Management System (QMS) Assistant",
-      titleDesc2: "Inventory Controller",
+      position: "Admin Office Staff (TripleStar Packaging Corporation)",
+      titleDesc1: "⦿ Quality Management System (QMS) Assistant",
+      titleDesc2: "⦿ Inventory Controller",
       desc1:
         "in charge of incoming and outgoing of raw materials through ERP system.",
       desc2:

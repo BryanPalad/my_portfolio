@@ -6,8 +6,8 @@ export default function TrainingsAndCert() {
   const trainingsandcerts = [
     {
       date: "Dec 2019 - March 2019",
-      title: "Desktop Support",
-      desc: "On The Job Training (Teletech Customer Care Management Philippines Inc.) Sta Rosa. Laguna Branch",
+      title: "IT Desktop Support OJT (Teletech Customer Care Management Philippines Inc.)",
+      desc: "Maintains, analyzes, troubleshoots, upgrades, replaces and repairs computer systems hardware and computer peripherals.",
     },
     {
       date: "March 2019",

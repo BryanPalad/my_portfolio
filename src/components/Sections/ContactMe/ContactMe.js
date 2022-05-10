@@ -62,8 +62,7 @@ export default function ContactMe() {
   const sendEmail = (e) => {
     setLoading(true);
     setIng("ing");
-    // emailjs
-    //   .sendForm(
+    // emailjs.sendForm(
     //     "service_r3c2acf",
     //     "gmail_template",
     //     form.current,
