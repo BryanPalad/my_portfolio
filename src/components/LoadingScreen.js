@@ -3,6 +3,9 @@ import Lottie from "react-lottie";
 import * as programming from "../93857-abstract-modular-cube-1.json";
 import App from "../App";
 
+const style = {
+  marginTop: "28%",
+};
 const loadingAnimation = {
   loop: true,
   autoplay: true,
@@ -23,10 +26,10 @@ function LoadingScreen() {
   return (
     <>
       {!completed ? (
-        <div className="container" style={{justifyContent: 'center', alignItems: 'center'}}>
+        <div className="container loading" style={{justifyContent: 'center', alignItems: 'center'}}>
         <Lottie
           options={loadingAnimation}
-          style={{ marginTop: "28%" }}
+          style={style}
           height={300}
           width={300}
         />
