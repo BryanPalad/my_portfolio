@@ -49,9 +49,14 @@ export default function ContactMe() {
     }
   }, [formErrors]);
 
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormValues({ ...formValues, [name]: value });
+    if(e.target !== ""){
+      setIsSubmit(false)
+      setFormErrors(e => e ="")
+    }
   };
 
   const handleSubmit = (e) => {
@@ -90,23 +95,38 @@ export default function ContactMe() {
   const validate = (values) => {
     const errors = {};
     const validName = /^[a-zA-Z\s.]*$/;
-    const validEmail =
-      /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+    const validEmail = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
     if (!values.fullname) {
       errors.fullname = "Please enter your name!";
+      Toast.fire({
+        icon: 'error',
+        title: 'Empty Fields, Please try again'
+      })
     } else if (!validName.test(values.fullname)) {
       errors.fullname = "This is not a valid name";
     }
     if (!values.email) {
       errors.email = "Email is required!";
+      Toast.fire({
+        icon: 'error',
+        title: 'Empty Fields, Please try again'
+      })
     } else if (!validEmail.test(values.email)) {
       errors.email = "Please provide a valid email format!";
     }
     if (!values.subject) {
       errors.subject = "Subject is required!";
+      Toast.fire({
+        icon: 'error',
+        title: 'Empty Fields, Please try again'
+      })
     }
     if (!values.message) {
       errors.message = "Message is required!";
+      Toast.fire({
+        icon: 'error',
+        title: 'Empty Fields, Please try again'
+      })
     }
     return errors;
   };

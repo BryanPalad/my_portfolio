@@ -10,7 +10,7 @@ export default function Experience() {
       titleDesc1: "⦿ Quality Management System (QMS) Assistant",
       titleDesc2: "⦿ Inventory Controller",
       desc1:
-        "in charge of incoming and outgoing of raw materials through ERP system.",
+        "The primary function will require the internal auditing and daily maintenance/review of the quality system processes to ensure compliance and improvements to the system",
       desc2:
         "in charge of incoming and outgoing of raw materials through ERP system.",
     },

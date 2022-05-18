@@ -21,7 +21,7 @@ export default function SidebarData({
     <div className="aside">
       <div className="logo">
         <a href="#home" onClick={activehomes}>
-          <span>BS</span>IT
+          <span>Bryan</span>
         </a>
       </div>
       <div className="nav-toggler">

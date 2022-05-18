@@ -6,6 +6,7 @@ import Fade from "react-reveal/Fade";
 import HomeData from "./HomeData";
 
 export default function Home() {
+
   return (
     <section className="home section" id="home">
       <div className="container">
