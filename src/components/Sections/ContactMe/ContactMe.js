@@ -85,7 +85,7 @@ export default function ContactMe() {
       setFormValues(initialValues);
       Toast.fire({
       icon: 'success',
-      title: 'You have successully sent an email'
+      title: 'You have successfully sent an email'
     })
       setLoading(false);
       setIng("");

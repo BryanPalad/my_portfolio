@@ -103,10 +103,6 @@ h3.my-profession span
     .home .home-info .hello
     {
         margin-top: 3
-        
-        
-        
-        0px;
     }
     .home .home-info .btn 
     {
@@ -116,8 +112,9 @@ h3.my-profession span
         width: 50%;
         margin-left: 25%;
     }
+   
     #hiremebtn
-    {
+    {   
         flex: 0 0 100%;
         max-width: 100%;
         text-align: center;

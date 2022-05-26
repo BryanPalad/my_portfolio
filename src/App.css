@@ -130,7 +130,7 @@ ul
 }
 .btn:hover 
 {
-    transform: scale(1.05);
+    background-color:red;
 }
 .shadow-dark
 {

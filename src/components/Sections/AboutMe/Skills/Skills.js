@@ -4,7 +4,7 @@ import "./Skills.css";
 
 export default function Skills() {
   const proficient = ["html.png", "css.png", "javascript.png", "bootstrap.png"];
-  const knowledgeable = ["react.png", "php.png", "c-sharp.png", "vuejs.png"];
+  const knowledgeable = ["c-sharp.png", "php.png","react.png","vuejs.png"];
   const toolsused = ["github.png", "vscode.png", "mysql.png"];
   return (
     <div className="skills padd-15">

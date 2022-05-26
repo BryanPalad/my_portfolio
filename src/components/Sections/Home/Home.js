@@ -49,6 +49,7 @@ export default function Home() {
                 <a href="#about" id="hiremebtn" className="btn hire-me">
                   Learn More
                 </a>
+                
               </Fade>
             </Link>
           </div>

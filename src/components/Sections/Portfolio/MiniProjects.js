@@ -14,10 +14,16 @@ export default function MiniProjects() {
       github: "https://github.com/BryanPalad/Tesla-clone",
     },
     {
+      images: "images/portfolio/ExpenseTracker.PNG",
+      demo: "https://cryptoversemini.netlify.app/",
+      github: "https://github.com/BryanPalad/expense_tracker",
+    },
+    {
       images: "images/portfolio/Cryptoverse.PNG",
       demo: "https://cryptoversemini.netlify.app/",
       github: "https://github.com/BryanPalad/Cryptoverse",
     },
+    
   ];
   return (
     <div className="row">
