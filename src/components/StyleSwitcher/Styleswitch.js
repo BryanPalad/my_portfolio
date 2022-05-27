@@ -17,9 +17,7 @@ export default function Styleswitch() {
     setOpen(document.querySelector(".style-switcher").classList.toggle("open"));
 
     window.addEventListener("scroll", () => {
-      if (
-        document.querySelector(".style-switcher").classList.contains("open")
-      ) {
+      if (document.querySelector(".style-switcher").classList.contains("open")){
         document.querySelector(".style-switcher").classList.remove("open");
       }
     });
@@ -51,10 +49,10 @@ export default function Styleswitch() {
   return (
     <div className="style-switcher">
       <div className="style-switcher-toggler s-icon">
-        <i onClick={styleSwitcherToggle} className="fas fa-cog fa-spin"></i>
+        <i onClick={styleSwitcherToggle} title="Theme Colors" className="fas fa-cog fa-spin"></i>
       </div>
       <div className="day-night s-icon">
-        <i onClick={dayNight} className={`fas ${dn}`}></i>
+        <i onClick={dayNight} title={dn === 'fa-moon' ? "Dark Mode" : "Light Mode"} className={`fas ${dn}`}></i>
       </div>
       <h4>Theme Colors</h4>
       <div className="colors">

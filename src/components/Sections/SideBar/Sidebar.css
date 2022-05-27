@@ -28,6 +28,7 @@
     justify-content: center;
     align-items: center;
 }
+/* // SIDEBAR LOGO // */
 .aside .logo
 {
     position: absolute;
@@ -75,6 +76,8 @@
     right: 0;
 
 }
+
+/* // SIDEBAR TOGGLE BUTTON // */
 .aside .nav-toggler
 {
     height: 40px;
@@ -125,6 +128,7 @@
 
 }
 
+/* // SIDEBAR TABS // */
 .aside .nav
 {
     margin-top: 50px;
@@ -151,6 +155,7 @@
     margin-right: 15px;
 }
 
+/* // SIDEBAR FOOTER // */
 .copyright
 {
     flex: 0 0 100%;
@@ -160,6 +165,7 @@
     color: var(--text-black-700);
     margin-bottom: 10px;
 }
+
 /*RESPONSIVE*/
 @media (max-width: 1199px)
 {
