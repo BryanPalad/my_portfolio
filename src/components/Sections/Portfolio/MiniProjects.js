@@ -7,40 +7,58 @@ export default function MiniProjects() {
       images: "images/portfolio/Calculator.PNG",
       demo: "https://reactjscalculator1.netlify.app/",
       github: "https://github.com/BryanPalad/calculator_reactjs",
+      title: 'Calculator',
     },
     {
       images: "images/portfolio/Tesla-clone.PNG",
       demo: "https://teslacloneui.netlify.app/",
       github: "https://github.com/BryanPalad/Tesla-clone",
-    },
-    {
-      images: "images/portfolio/ExpenseTracker.PNG",
-      demo: "https://cryptoversemini.netlify.app/",
-      github: "https://github.com/BryanPalad/expense_tracker",
+      title: 'Tesla Clone',
     },
     {
       images: "images/portfolio/Cryptoverse.PNG",
       demo: "https://cryptoversemini.netlify.app/",
       github: "https://github.com/BryanPalad/Cryptoverse",
+      title: 'Cryptoverse',
     },
-    
+    {
+      images: "images/portfolio/ExpenseTracker.PNG",
+      demo: "https://cryptoversemini.netlify.app/",
+      github: "https://github.com/BryanPalad/expenses_tracker_redux",
+      title: 'Expense Tracker',
+    },
   ];
   return (
     <div className="row">
       <Fade bottom>
-        {miniproject.map(({ images, demo, github }) => {
+        {miniproject.map(({ images, demo, github, title }) => {
           return (
             <div className="portfolio-item padd-15">
               <div className="portfolio-item-inner shadow-dark">
                 <div className="portfolio-img">
                   <img src={images} alt="portfolio" />
-                  <div className="links">
+                  <h2>{title}</h2>
+                  {/* <div className="links">
                     <a className="view-demo" href={demo} target="_blank" rel="noreferrer">
                       Demo <i className="fa-solid fa-eye"></i>
                     </a>
                     <a className="view-git" href={github} target="_blank" rel="noreferrer">
                       Github <i className="fab fa-github"></i>
                     </a>
+                  </div> */}
+                  <div className="card-buttons">
+                    <div className="card-items">
+                      <a href={demo} target="_blank" rel="noreferrer">
+                      <h3>Live Demo</h3>
+                      <i className="fa-solid fa-eye"></i>
+                      </a>
+                    </div>
+                    <div className="card-items">
+                    <a href={github} target="_blank" rel="noreferrer">
+                      <h3>Github</h3>
+                      <i className="fab fa-github"></i>
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>

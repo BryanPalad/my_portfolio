@@ -29,12 +29,14 @@
     text-align: center;
     transition: all 0.3s ease;
     position:relative;
-    cursor: pointer;
 }   
 .portfolio .portfolio-item-inner:hover
 {
     transform: scale(1.05);
     display: block;
+}
+.portfolio-img img:hover {
+    opacity: 0.4;
 }
 .portfolio .portfolio-item-inner:hover .portfolio-img .links .view-demo,
 .portfolio .portfolio-item-inner:hover .portfolio-img .links .view-git
@@ -83,6 +85,46 @@
     display: block;
     
 }
+.portfolio-img:hover h2 {
+    opacity: 1;
+}
+.portfolio-img h2 {
+    position: absolute;
+    display: flex;
+    top:0;
+    left: 10px;
+    opacity: 0;
+    font-weight: 800;
+    color: var(--skin-color);
+}
+.card-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: var(--bg-black-100);
+    cursor: pointer;
+}
+.card-items {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    color: var(--text-black-900);
+    margin-left: 5px;
+}
+.card-items a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-black-900);
+}
+.card-items i {
+    display: flex;
+    justify-content: center;
+    margin-left: 5px;
+    align-items: center;
+    color: var(--text-black-900);
+}
+
 /* MODALS //////////////////////////////////////////*/
 .functions .col
 {
@@ -150,6 +192,7 @@
     float: right;
     font-size: 30px;
 }
+
 
 /*RESPONSIVE*/
 @media (max-width: 1198px)

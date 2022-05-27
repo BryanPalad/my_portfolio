@@ -89,7 +89,7 @@ export default function Modals({
                       <div className="row">
                         <a
                           className="demo"
-                          href="http://localhost:8080/I.TSpec%20Appointment%20System/index.php"
+                          href="http://localhost/I.TSpec%20Appointment%20System/index.php"
                           target="_blank"
                           rel="noreferrer"
                         >

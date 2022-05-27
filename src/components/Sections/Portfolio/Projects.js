@@ -60,6 +60,7 @@ export default function Projects() {
               onClick={handleOpen}
               title="view details"
             />
+            <h2>Online Dental Appointment System</h2>
             <Modals
               open={open}
               handleClose={handleClose}
@@ -67,7 +68,7 @@ export default function Projects() {
               title={title}
               description={description}
             />
-            <div className="links">
+            {/* <div className="links">
               <a
                 className="view-demo"
                 href="http://localhost/I.TSpec%20Appointment%20System/index.php"
@@ -84,7 +85,21 @@ export default function Projects() {
               >
                 Github <i className="fab fa-github"></i>
               </a>
-            </div>
+            </div> */}
+                  <div className="card-buttons">
+                    <div className="card-items">
+                      <a href="http://localhost/I.TSpec%20Appointment%20System/index.php" target="_blank" rel="noreferrer">
+                      <h3>Live Demo</h3>
+                      <i className="fa-solid fa-eye"></i>
+                      </a>
+                    </div>
+                    <div className="card-items">
+                    <a href="https://github.com/BryanPalad/FernandezDentalClinic" target="_blank" rel="noreferrer">
+                      <h3>Github</h3>
+                      <i className="fab fa-github"></i>
+                      </a>
+                    </div>
+                  </div>
           </div>
         </div>
       </div>
