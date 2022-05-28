@@ -23,7 +23,7 @@ export default function MiniProjects() {
     },
     {
       images: "images/portfolio/ExpenseTracker.PNG",
-      demo: "https://cryptoversemini.netlify.app/",
+      demo: "https://expensetrackermini.netlify.app/",
       github: "https://github.com/BryanPalad/expenses_tracker_redux",
       title: 'Expense Tracker',
     },

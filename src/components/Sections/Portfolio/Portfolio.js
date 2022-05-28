@@ -6,7 +6,7 @@ import MiniProjects from "./MiniProjects";
 
 export default function Portfolio() {
   return (
-    <section className="portfolio section" id="portfolio">
+    <section className="portfolio section" id="4">
       <div className="container">
         <div className="row">
           <div className="section-title padd-15">

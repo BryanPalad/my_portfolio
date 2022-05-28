@@ -10,7 +10,7 @@ import Fade from "react-reveal/Fade";
 
 export default function AboutMe() {
   return (
-    <section className="about section" id="about">
+    <section className="about section" id="2">
       <div className="container">
         <div className="row">
           <div className="section-title padd-15">

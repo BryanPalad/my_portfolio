@@ -8,7 +8,7 @@ import HomeData from "./HomeData";
 export default function Home() {
 
   return (
-    <section className="home section" id="home">
+    <section className="home section" id="1">
       <div className="container">
         <div className="row">
           <div className="home-info padd-15">

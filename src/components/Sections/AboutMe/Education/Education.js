@@ -7,7 +7,7 @@ export default function Education() {
     {
       schoolyear: "SY. 2015- 2019",
       level: "College Level",
-      school: "STI College Calamba (BSIT)",
+      school: "BS Information Technology",
       links: "https://www.sti.edu/campuses-details.asp?campus_id=CAL",
       images: "../../../images/STI.png",
     },

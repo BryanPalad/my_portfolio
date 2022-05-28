@@ -1,3 +1,6 @@
+.about .about-content .experience {
+    margin-top: 50px;
+}
 @media (max-width: 767px)
 {   
     .about .about-content .experience

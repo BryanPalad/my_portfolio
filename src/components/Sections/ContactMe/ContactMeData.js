@@ -46,7 +46,7 @@ export default function ContactMeData({
     },
   ];
   return (
-    <section className="contact section" id="contact">
+    <section className="contact section" id="5">
       <div className="container">
         <div className="row">
           <div className="section-title padd-15">

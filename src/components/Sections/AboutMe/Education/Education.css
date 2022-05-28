@@ -2,7 +2,7 @@
 {
     flex: 0 0 50%;
     max-width: 50%;
-    margin-top: 30px;
+    margin-top: 80px;
 }
 .education .education-item 
 {   
@@ -25,7 +25,6 @@
     margin-bottom: 10px;
     cursor: pointer;
 }
-
 @media (max-width: 767px)
 {   
     .about .about-content .education

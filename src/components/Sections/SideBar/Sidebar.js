@@ -25,7 +25,7 @@ export default function Sidebar(props) {
   const menu = () => {
     setOpen(document.querySelector(".aside").classList.toggle("open"));
   };
-
+  
   const activehomes = () => {
     setActivehome("active");
     setActiveabout("");

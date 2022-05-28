@@ -10,9 +10,9 @@ export default function Experience() {
       titleDesc1: "⦿ Quality Management System (QMS) Assistant",
       titleDesc2: "⦿ Inventory Controller",
       desc1:
-        "The primary function will require the internal auditing and daily maintenance/review of the quality system processes to ensure compliance and improvements to the system",
+        "supports the  QMS head in all aspects of quality system operations. Internal auditing and daily maintenance/review of the quality system processes to ensure compliance and improvements. Focus on meeting customer requirements on a consistent basis.",
       desc2:
-        "in charge of incoming and outgoing of raw materials through ERP system.",
+        "in charge of incoming and outgoing of raw materials through ERP system. Ensures that all stocks were monitored and all the delivery receipts were accurately checked before transmitting to accounting dept.",
     },
   ];
   return (
