@@ -7,8 +7,50 @@ import Experience from "./Experience/Experience";
 import TrainingsAndCert from "./TrainingsAndCert/TrainingsAndCert";
 import "./AboutMe.css";
 import Fade from "react-reveal/Fade";
+import PropTypes from 'prop-types';
+import Tabs from '@mui/material/Tabs';
+import Tab from '@mui/material/Tab';
+import Typography from '@mui/material/Typography';
+import Box from '@mui/material/Box';
+function TabPanel(props) {
+  const { children, value, index, ...other } = props;
+
+  return (
+    <div
+      role="tabpanel"
+      hidden={value !== index}
+      id={`simple-tabpanel-${index}`}
+      aria-labelledby={`simple-tab-${index}`}
+      {...other}
+    >
+      {value === index && (
+        <Box sx={{ p: 3 }}>
+          <Typography>{children}</Typography>
+        </Box>
+      )}
+    </div>
+  );
+}
+
+TabPanel.propTypes = {
+  children: PropTypes.node,
+  index: PropTypes.number.isRequired,
+  value: PropTypes.number.isRequired,
+};
+
+function a11yProps(index) {
+  return {
+    id: `simple-tab-${index}`,
+    'aria-controls': `simple-tabpanel-${index}`,
+  };
+}
 
 export default function AboutMe() {
+  const [value, setValue] = React.useState(0);
+
+  const handleChange = (event, newValue) => {
+    setValue(newValue);
+  };
   return (
     <section className="about section" id="2">
       <div className="container">
@@ -29,8 +71,8 @@ export default function AboutMe() {
                   </h3>
                 </Fade>
                 <p>
-                  BSIT Graduate year 2019 from STI College Calamba, who aims to
-                  be a full stack developer in my future career.
+                  BS Information Technology Graduate year 2019, landed my first job in a Packaging Company as an Office Staff and spent 2 years and 3 months,
+                  I've decided to left my current job and pursue my dream job.
                 </p>
               </div>
             </div>
@@ -41,13 +83,31 @@ export default function AboutMe() {
             <div className="row">
               <Skills />
             </div>
-            <div className="row">
+            <Box sx={{ width: '100%' }}>
+              <Box sx={{ borderBottom: 1, borderColor: 'divider'}}>
+                <Tabs value={value} onChange={handleChange} textColor="primary" aria-label="basic tabs example" TabIndicatorProps={{style: {backgroundColor:'var(--skin-color)'}}} centered>
+                  <Tab label="Experience" {...a11yProps(0)} />
+                  <Tab label="Education" {...a11yProps(1)} />
+                  <Tab label="Certifications" {...a11yProps(2)} />
+                </Tabs>
+              </Box>
+              <TabPanel value={value} index={0}>
+                <Experience/>
+              </TabPanel>
+              <TabPanel value={value} index={1}>
+                <Education/>
+              </TabPanel>
+              <TabPanel value={value} index={2}>
+                <TrainingsAndCert />
+              </TabPanel>
+            </Box>
+            {/* <div className="row">
               <Education />
               <div className="expiandcerts">
                 <Experience />
                 <TrainingsAndCert />
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

@@ -53,7 +53,7 @@ export default function Projects() {
       <Fade bottom>
       <div className="portfolio-item padd-15">
         <div className="portfolio-item-inner shadow-dark">
-          <div className="portfolio-img">
+          <div className="portfolio-img" style={{cursor: 'pointer'}}>
             <img
               src="images/portfolio/FernandezDentalClinic.PNG"
               alt="portfolio"

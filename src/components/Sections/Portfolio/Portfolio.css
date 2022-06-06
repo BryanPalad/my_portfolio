@@ -102,6 +102,12 @@
     justify-content: center;
     background-color: var(--bg-black-100);
     cursor: pointer;
+}   
+.card-buttons .card-items a:hover i{
+    color: var(--skin-color);
+}
+.card-buttons .card-items a:hover h3{
+    color: var(--skin-color);
 }
 .card-items {
     display: flex;

@@ -1,11 +1,12 @@
 .about .about-content .education
 {
-    flex: 0 0 50%;
-    max-width: 50%;
-    margin-top: 80px;
+    flex: 0 0 100%;
+    max-width: 70%;
+    margin-top: 20px;
+    margin-left: 15%;
 }
 .education .education-item 
-{   
+{ 
     text-align: left;
 }
 .education .education-item img
@@ -14,6 +15,112 @@
 }
 .education .education-item span
 {
+    
+    padding-left: 10%;
+    vertical-align: middle;
+    font-weight: 600;
+}
+.education img
+{
+    height: 8%;
+    width: 8%;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.education .timeline-box-educ
+{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.education .timeline-educ
+{
+    background-color: var(--bg-black-100);
+    padding: 30px 15px;
+    border: 1px solid var(--bg-black-50);
+    border-radius: 10px;
+    width: 100%;
+    position: relative;
+}
+.education .timeline-educ .timeline-item-educ
+{
+    position: relative;
+    padding-left: 37px;
+    padding-bottom: 50px;
+}
+.education .timeline-educ .timeline-item-educ:last-child
+{
+    padding-bottom: 0;
+}
+.education .timeline-educ .timeline-item-educ::before
+{
+    content: '';
+    width: 1px;
+    position: absolute;
+    height: 100%;
+    left: 7px;
+    top: 0;
+    /* background-color: green; */
+    background-color: var(--skin-color);
+}
+.education .timeline-educ .circle-dot-educ
+{
+    position: absolute;
+    left: 0px;
+    top: 0;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: var(--skin-color);
+}
+.education .timeline-educ .timeline-date-educ
+{
+    font-weight: 40px;
+    font-size: 14px;
+    margin-bottom: 12px;
+    color: var(--text-black-700);
+}
+.education .timeline-educ .timeline-date-educ .fa
+{
+    margin-right: 5px;
+}
+.education .timeline-educ .timeline-title-educ
+{
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+    color: var(--text-black-900);
+
+}
+.education .timeline-educ .timeline-text-educ
+{
+    line-height: 25px;
+    font-size: 16px;
+    text-align: justify;
+    color: var(--text-black-700);
+}
+@media (max-width: 767px)
+{   
+    .about .about-content .education
+    {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-top: 20px;
+        margin-left: -5px;
+    }
+
+    .education .education-item 
+{ 
+    text-align: left;
+}
+.education .education-item img
+{
+    vertical-align: middle;
+}
+.education .education-item span
+{
+    
     padding-left: 10%;
     vertical-align: middle;
     font-weight: 600;
@@ -25,14 +132,82 @@
     margin-bottom: 10px;
     cursor: pointer;
 }
-@media (max-width: 767px)
-{   
-    .about .about-content .education
-    {
-        flex: 0 0 100%;
-        max-width: 100%;
-    }
+
+.education .timeline-box-educ
+{
+    flex: 0 0 100%;
+    max-width: 100%;
 }
+.education .timeline-educ
+{
+    background-color: var(--bg-black-100);
+    padding: 30px 15px;
+    border: 1px solid var(--bg-black-50);
+    border-radius: 10px;
+    width: 100%;
+    position: relative;
+}
+.education .timeline-educ .timeline-item-educ
+{
+    position: relative;
+    padding-left: 37px;
+    padding-bottom: 50px;
+}
+.education .timeline-educ .timeline-item-educ:last-child
+{
+    padding-bottom: 0;
+}
+.education .timeline-educ .timeline-item-educ::before
+{
+    content: '';
+    width: 1px;
+    position: absolute;
+    height: 100%;
+    left: 7px;
+    top: 0;
+    /* background-color: green; */
+    background-color: var(--skin-color);
+}
+.education .timeline-educ .circle-dot-educ
+{
+    position: absolute;
+    left: 0px;
+    top: 0;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: var(--skin-color);
+}
+.education .timeline-educ .timeline-date-educ
+{
+    font-weight: 40px;
+    font-size: 14px;
+    margin-bottom: 12px;
+    color: var(--text-black-700);
+}
+.education .timeline-educ .timeline-date-educ .fa
+{
+    margin-right: 5px;
+}
+.education .timeline-educ .timeline-title-educ
+{
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+    color: var(--text-black-900);
+
+}
+.education .timeline-educ .timeline-text-educ
+{
+    line-height: 25px;
+    font-size: 16px;
+    text-align: justify;
+    color: var(--text-black-700);
+}
+}
+
+
 @media (max-width: 525px)
 {   
     .education .education-item span

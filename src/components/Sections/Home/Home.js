@@ -27,8 +27,6 @@ export default function Home() {
                       1000,
                       " IT Graduate 🎓",
                       1000,
-                      " Gamer 🎮",
-                      1000,
                       " Aspiring Full Stack Dev ⏳",
                       1000,
                     ]}

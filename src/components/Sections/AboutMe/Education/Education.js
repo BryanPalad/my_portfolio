@@ -28,26 +28,26 @@ export default function Education() {
   ];
   return (
     <div className="education padd-15">
-      <h3 className="title">Education</h3>
+      {/* <h3 className="title">Education</h3> */}
       <div className="row">
-        <div className="timeline-box padd-15">
-          <div className="timeline shadow-dark">
+        <div className="timeline-box-educ padd-15">
+          <div className="timeline-educ shadow-dark">
             {/* education item start */}
             {schoolObj.map(({ schoolyear, level, school, links, images }) => {
               return (
-                <div className="timeline-item">
-                  <div className="circle-dot"></div>
-                  <h3 className="timeline-date">
+                <div className="timeline-item-educ">
+                  <div className="circle-dot-educ"></div>
+                  <h3 className="timeline-date-educ">
                     <i className="fa fa-calendar"></i>
                     {schoolyear}
                   </h3>
                   <Fade bottom>
-                    <h4 className="timeline-title">{level}</h4>
+                    <h4 className="timeline-title-educ">{level}</h4>
                     <div className="education-item">
                       <a href={links} target="_blank" rel="noreferrer">
                         <img src={images} alt="school"></img>
                       </a>
-                      <span className="timeline-text">{school}</span>
+                      <span className="timeline-text-educ">{school}</span>
                     </div>
                   </Fade>
                 </div>

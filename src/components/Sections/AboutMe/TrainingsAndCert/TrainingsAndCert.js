@@ -17,7 +17,7 @@ export default function TrainingsAndCert() {
   ];
   return (
     <div className="trainings padd-15">
-      <h3 className="title">Trainings & Certifications</h3>
+      {/* <h3 className="title">Trainings & Certifications</h3> */}
       <div className="row">
         <div className="timeline-box padd-15">
           <div className="timeline shadow-dark">
@@ -52,7 +52,7 @@ export default function TrainingsAndCert() {
                     <img
                       src="../images/simplilearn.png"
                       alt="Simplilearn"
-                      style={{ width: "30%" }}
+                      style={{ width: "20%" }}
                       title="Simplilearn"
                     ></img>
                   </a>

@@ -17,7 +17,7 @@ export default function Experience() {
   ];
   return (
     <div className="experience padd-15">
-      <h3 className="title">Experience</h3>
+      {/* <h3 className="title">Experience</h3> */}
       <div className="row">
         <div className="timeline-box padd-15">
           <div className="timeline shadow-dark">

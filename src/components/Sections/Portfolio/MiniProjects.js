@@ -49,13 +49,13 @@ export default function MiniProjects() {
                   <div className="card-buttons">
                     <div className="card-items">
                       <a href={demo} target="_blank" rel="noreferrer">
-                      <h3>Live Demo</h3>
+                      <h3 className="live">Live Demo</h3>
                       <i className="fa-solid fa-eye"></i>
                       </a>
                     </div>
                     <div className="card-items">
                     <a href={github} target="_blank" rel="noreferrer">
-                      <h3>Github</h3>
+                      <h3 className="live">Github</h3>
                       <i className="fab fa-github"></i>
                       </a>
                     </div>
