@@ -50,6 +50,7 @@ h3.my-profession span
     /* background-image:url('https://c.tenor.com/C_nJg-iEolcAAAAd/goku-ultra-instinct.gif'); */
     background-image: url(../../../../public/images/gradpic.jpg);
     background-size: cover;
+    transition: 0.5s ease;
 }
 .typing
 {

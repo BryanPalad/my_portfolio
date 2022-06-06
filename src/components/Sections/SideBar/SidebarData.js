@@ -53,7 +53,7 @@ export default function SidebarData({
         >
           <li>
             <a href="#about" className={activeabout} onClick={activeabouts}>
-              <i className="fa fa-user"></i> About
+            <i class="fa-regular fa-address-card"></i> About
             </a>
           </li>
         </Link>

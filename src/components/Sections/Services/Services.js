@@ -28,21 +28,21 @@ export default function Services() {
       desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil velit ab itaque",
       img: "",
     },
-    {
-      title: "In Progress",
-      desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil velit ab itaque",
-      img: "",
-    },
-    {
-      title: "In Progress",
-      desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil velit ab itaque",
-      img: "",
-    },
-    {
-      title: "In Progress",
-      desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil velit ab itaque",
-      img: "",
-    },
+    // {
+    //   title: "In Progress",
+    //   desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil velit ab itaque",
+    //   img: "",
+    // },
+    // {
+    //   title: "In Progress",
+    //   desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil velit ab itaque",
+    //   img: "",
+    // },
+    // {
+    //   title: "In Progress",
+    //   desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil velit ab itaque",
+    //   img: "",
+    // },
   ];
   return (
     <section className="service section" id="3">
