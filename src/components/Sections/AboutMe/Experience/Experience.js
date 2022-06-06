@@ -32,7 +32,7 @@ export default function Experience() {
                     </h3>
                     <Fade bottom>
                       <h4 className="timeline-title">{position}</h4>
-                      <p className="timeline-text">
+                      <p className="timeline-text" style={{marginBottom: '20px'}}>
                         <b>{titleDesc1}</b> - {desc1}
                       </p>
                       {desc2 && titleDesc2 ? (

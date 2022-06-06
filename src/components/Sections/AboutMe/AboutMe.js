@@ -45,6 +45,11 @@ function a11yProps(index) {
   };
 }
 
+const tabStyle = {
+    color: 'var(--skin-color)',
+    fontWeight: '500',
+    fontFamily: 'Poppins'
+}
 export default function AboutMe() {
   const [value, setValue] = React.useState(0);
 
@@ -86,9 +91,9 @@ export default function AboutMe() {
             <Box sx={{ width: '100%' }}>
               <Box sx={{ borderBottom: 1, borderColor: 'divider'}}>
                 <Tabs value={value} onChange={handleChange} textColor="primary" aria-label="basic tabs example" TabIndicatorProps={{style: {backgroundColor:'var(--skin-color)'}}} centered>
-                  <Tab label="Experience" {...a11yProps(0)} />
-                  <Tab label="Education" {...a11yProps(1)} />
-                  <Tab label="Certifications" {...a11yProps(2)} />
+                  <Tab label={<span style={tabStyle}>Experience</span>} {...a11yProps(0)} />
+                  <Tab label={<span style={tabStyle}>Education</span>} {...a11yProps(1)} />
+                  <Tab label={<span style={tabStyle}>Certifications</span>} {...a11yProps(2)} />
                 </Tabs>
               </Box>
               <TabPanel value={value} index={0}>
