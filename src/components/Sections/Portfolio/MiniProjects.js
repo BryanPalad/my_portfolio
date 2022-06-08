@@ -16,16 +16,16 @@ export default function MiniProjects() {
       title: 'Tesla Clone',
     },
     {
+      images: "images/portfolio/Expense.PNG",
+      demo: "https://expensetrackermini.netlify.app/",
+      github: "https://github.com/BryanPalad/expenses_tracker_redux",
+      title: 'Expense Tracker',
+    },
+    {
       images: "images/portfolio/Cryptoverse.PNG",
       demo: "https://cryptoversemini.netlify.app/",
       github: "https://github.com/BryanPalad/Cryptoverse",
       title: 'Cryptoverse',
-    },
-    {
-      images: "images/portfolio/ExpenseTracker.PNG",
-      demo: "https://expensetrackermini.netlify.app/",
-      github: "https://github.com/BryanPalad/expenses_tracker_redux",
-      title: 'Expense Tracker',
     },
   ];
   return (
@@ -36,7 +36,7 @@ export default function MiniProjects() {
             <div className="portfolio-item padd-15">
               <div className="portfolio-item-inner shadow-dark">
                 <div className="portfolio-img">
-                  <img src={images} alt="portfolio" />
+                  <img src={images} alt="portfolio"/>
                   <h2>{title}</h2>
                   {/* <div className="links">
                     <a className="view-demo" href={demo} target="_blank" rel="noreferrer">

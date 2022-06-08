@@ -4,7 +4,7 @@ export default function Qualifications() {
   const qualifications = [
     { info: "✔ Dedicated and hardworking individual" },
     { info: "✔ Highly adaptable, Flexible, Well disciplined and keen on details" },
-    { info: "✔ Fast learner and have a strong will to learn" },
+    { info: "✔ Fast learner and have a strong will to learn new technologies." },
     { info: "✔ Able to be a good leader and a follower" },
   ];
   return (

@@ -3,7 +3,7 @@
     flex: 0 0 60%;
     max-width: 60%;
     margin-top: 40px;
-
+    overflow: hidden;
 }
 .about .about-content .personal-info .info-item
 {

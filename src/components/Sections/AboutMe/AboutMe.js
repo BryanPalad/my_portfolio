@@ -48,7 +48,8 @@ function a11yProps(index) {
 const tabStyle = {
     color: 'var(--skin-color)',
     fontWeight: '500',
-    fontFamily: 'Poppins'
+    fontFamily: 'Poppins',
+    fontSize: '11px',
 }
 export default function AboutMe() {
   const [value, setValue] = React.useState(0);
