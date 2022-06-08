@@ -27,10 +27,10 @@ export default function Education() {
     },
   ];
   return (
-    <div className="education padd-15">
+    <div className="education">
       {/* <h3 className="title">Education</h3> */}
       <div className="row">
-        <div className="timeline-box-educ padd-15">
+        <div className="timeline-box-educ">
           <div className="timeline-educ shadow-dark">
             {/* education item start */}
             {schoolObj.map(({ schoolyear, level, school, links, images }) => {

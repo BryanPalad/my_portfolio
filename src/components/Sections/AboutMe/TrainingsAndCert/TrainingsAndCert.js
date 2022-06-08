@@ -16,10 +16,10 @@ export default function TrainingsAndCert() {
     },
   ];
   return (
-    <div className="trainings padd-15">
+    <div className="trainings">
       {/* <h3 className="title">Trainings & Certifications</h3> */}
       <div className="row">
-        <div className="timeline-box padd-15">
+        <div className="timeline-box">
           <div className="timeline shadow-dark">
             {/* <!-- TIMELINE ITEM --> */}
             {trainingsandcerts.map(({ date, title, desc }) => {

@@ -7,8 +7,8 @@ export default function Experience() {
     {
       date: `Oct. 15 2019 - Jan. 15 2022 (2yrs & 3 months)`,
       position: "Admin Office Staff (TripleStar Packaging Corporation)",
-      titleDesc1: "⦿ Quality Management System (QMS) Assistant",
-      titleDesc2: "⦿ Inventory Controller",
+      titleDesc1: "Quality Management System (QMS) Assistant",
+      titleDesc2: "Inventory Controller",
       desc1:
         "supports the  QMS head in all aspects of quality system operations. Internal auditing and daily maintenance/review of the quality system processes to ensure compliance and improvements. Focus on meeting customer requirements on a consistent basis.",
       desc2:
@@ -16,10 +16,10 @@ export default function Experience() {
     },
   ];
   return (
-    <div className="experience padd-15">
+    <div className="experience">
       {/* <h3 className="title">Experience</h3> */}
       <div className="row">
-        <div className="timeline-box padd-15">
+        <div className="timeline-box">
           <div className="timeline shadow-dark">
             {/* <!-- TIMELINE ITEM --> */}
             {experience.map(

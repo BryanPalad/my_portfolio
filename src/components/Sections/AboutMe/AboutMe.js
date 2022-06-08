@@ -46,11 +46,14 @@ function a11yProps(index) {
 }
 
 const tabStyle = {
-    color: 'var(--skin-color)',
-    fontWeight: '500',
-    fontFamily: 'Poppins',
-    fontSize: '11px',
-}
+    color: "var(--skin-color)",
+    fontWeight: "500",
+    fontFamily: "Poppins",
+    "@media screen and (max-width: 500px)": {
+      fontSize: '11px',
+    },
+    // fontSize: '11px',
+};
 export default function AboutMe() {
   const [value, setValue] = React.useState(0);
 
