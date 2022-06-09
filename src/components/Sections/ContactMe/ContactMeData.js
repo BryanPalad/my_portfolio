@@ -10,6 +10,8 @@ export default function ContactMeData({
   formErrors,
   ing,
   loading,
+  audioPlayer,
+  NotificationSound,
 }) {
   const contactinfo = [
     {
@@ -155,6 +157,7 @@ export default function ContactMeData({
                       {" "}
                       Send{ing} Message{" "}
                       <ClipLoader color={"white"} loading={loading} size={10} />
+                      <audio ref={audioPlayer} src={NotificationSound} />
                     </button>
                   </Fade>
                 </div>

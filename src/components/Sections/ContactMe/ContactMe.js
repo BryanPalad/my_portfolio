@@ -3,9 +3,11 @@ import "./ContactMe.css";
 import Swal from 'sweetalert2';
 import emailjs from "@emailjs/browser";
 import ContactMeData from "./ContactMeData";
+import NotificationSound from "./audio/success-notification_C_major.wav";
 
 export default function ContactMe() {
   const form = useRef();
+  const audioPlayer = useRef(null);
   const initialValues = { fullname: "", email: "", subject: "", message: "" };
   const [formValues, setFormValues] = useState(initialValues);
   const [formErrors, setFormErrors] = useState({});
@@ -67,26 +69,29 @@ export default function ContactMe() {
   const sendEmail = (e) => {
     setLoading(true);
     setIng("ing");
-    // emailjs.sendForm(
-    //     "service_r3c2acf",
-    //     "gmail_template",
-    //     form.current,
-    //     "GXerigEHG4Y5D03xO"
-    //   )
-    //   .then(
-    //     (result) => {
-    //       console.log(result.text);
-    //     },
-    //     (error) => {
-    //       console.log(error.text);
-    //     }
-    //   );
+
+    emailjs.sendForm(
+        "service_r3c2acf",
+        "gmail_template",
+        form.current,
+        "GXerigEHG4Y5D03xO"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+
     setTimeout(() => {
       setFormValues(initialValues);
       Toast.fire({
       icon: 'success',
       title: 'You have successfully sent an email'
     })
+      audioPlayer.current.play();
       setLoading(false);
       setIng("");
     }, 3000);
@@ -140,6 +145,8 @@ export default function ContactMe() {
       formErrors={formErrors}
       ing={ing}
       loading={loading}
+      audioPlayer={audioPlayer}
+      NotificationSound={NotificationSound}
     />
   );
 }
