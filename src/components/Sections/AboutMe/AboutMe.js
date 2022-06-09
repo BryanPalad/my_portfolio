@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import Skills from "./Skills/Skills";
 import PersonalInfo from "./PersonalInfo/PersonalInfo";
 import Qualifications from "./Qualifications/Qualifications";
@@ -45,21 +45,33 @@ function a11yProps(index) {
   };
 }
 
-const tabStyle = {
-    color: "var(--skin-color)",
-    fontWeight: "500",
-    fontFamily: "Poppins",
-    "@media screen and (max-width: 500px)": {
-      fontSize: '11px',
-    },
-    // fontSize: '11px',
-};
 export default function AboutMe() {
   const [value, setValue] = React.useState(0);
+  const [tabFont , setTabFont] = useState('15px');
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
+
+  const tabStyle = {
+    color: "var(--skin-color)",
+    fontWeight: "500",
+    fontFamily: "Poppins",
+    fontSize: `${tabFont}`,
+    padding: '0',
+};
+  useEffect(() => {
+    function handleResize() {
+      if (
+        window.innerWidth <= 425) {
+        setTabFont('11px');
+      } else {
+        setTabFont('15px');
+      }
+    }
+    window.addEventListener("resize", handleResize);
+  });
+
   return (
     <section className="about section" id="2">
       <div className="container">

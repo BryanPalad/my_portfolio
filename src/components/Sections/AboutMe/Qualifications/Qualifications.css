@@ -44,3 +44,15 @@
     }
 
 }
+@media (max-width: 358px) {
+    .about .about-content .qualifications
+    {
+        margin-bottom: 50px;
+    }
+}
+@media (max-width: 303px) {
+    .about .about-content .qualifications .qualifications-info h3
+    {
+        font-size: 15px;
+    }
+}

@@ -47,7 +47,7 @@ export default function PersonalInfoData({ age }) {
     {
       icon: "fa-solid fa-laptop",
       desc: "Status :",
-      span: "Unemployed",
+      span: "Open for a Job",
       style: true,
     },
   ];
@@ -60,8 +60,8 @@ export default function PersonalInfoData({ age }) {
               <p>
                 <i class={icon}></i> {desc}
                 {span === 'Employed' ? (
-                  <span style={{color: 'green'}}>{span}</span>
-                ):(<span style={{color: 'red'}}>{span}</span>)}
+                  <span style={{color: 'red'}}>{span}</span>
+                ):(<span style={{color: 'green'}}>{span}</span>)}
               </p>
             ) : (
               <>

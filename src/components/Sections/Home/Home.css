@@ -65,26 +65,26 @@ h3.my-profession span
 }
 .home-img::after
 {
-    content: '';
+    /* content: '';
     position: absolute;
     height: 60px;
     width: 60px;
     border-bottom: 10px solid var(--skin-color);
     border-right: 10px solid var(--skin-color);
-    right: 10px;
-    bottom: -40px;
+    right: 25px;
+    bottom: -30px; */
     
 }
 .home-img::before
 {
-    content: '';
+    /* content: '';
     position: absolute;
     height: 60px;
     width: 60px;
     border-top: 10px solid var(--skin-color);
     border-left: 10px solid var(--skin-color);
-    left: 10px;
-    top: -40px;
+    left: 25px;
+    top: -30px; */
 
 }
 /*RESPONSIVE*/
@@ -189,5 +189,27 @@ h3.my-profession span
     .home-img::after, .home-img::before
     {
         display: none;
+    }
+}
+@media (max-width: 412px) {
+    .hello > * {
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media (max-width: 349px) {
+    .home .home-info .btn 
+    {
+        width: 100%;
+        margin-left: -1px;
+    }
+    .home .home-img .profile-pic
+    {
+        width: 240px;
+        height: 240px;
+        margin-top: 70px;
+        border-radius: 50%;
+        object-fit: cover;
+
     }
 }

@@ -3,8 +3,9 @@
     background-image: url('../../../../public/images/portfolio/contact.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
+    object-fit: cover;
     overflow: hidden;
-
 }
 .contactme-title
 {
@@ -26,6 +27,7 @@
     text-align: center;
     font-size: 15px;
     margin-bottom: 40px;
+    font-weight: 600;
 }
 .contact .contact-info-item
 {

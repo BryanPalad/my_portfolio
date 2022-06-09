@@ -15,7 +15,9 @@ export default function Sidebar(props) {
 
   useEffect(() => {
     function handleResize() {
-      if (window.innerWidth <= 1198) {
+      if (
+        
+        window.innerWidth <= 1198) {
         setOpen(document.querySelector(".aside").classList.remove("open"));
       }
     }
