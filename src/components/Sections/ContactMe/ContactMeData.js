@@ -39,7 +39,7 @@ export default function ContactMeData({
       style: true,
     },
     {
-      icon: "fa-brands fa-linkedin-in",
+      icon: "fa-brands fa-linkedin",
       heading: "Linkedin",
       desc: "Bryan-Justin-Palad",
       image: "",
