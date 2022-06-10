@@ -39,11 +39,11 @@ export default function ContactMeData({
       style: true,
     },
     {
-      icon: "fab fa-github",
-      heading: "Github",
-      desc: "/BryanPalad",
-      image: false,
-      link: "https://github.com/BryanPalad",
+      icon: "fa-brands fa-linkedin-in",
+      heading: "Linkedin",
+      desc: "Bryan-Justin-Palad",
+      image: "",
+      link: "https://www.linkedin.com/in/bryan-justin-palad-4632b3234/",
       style: true,
     },
   ];

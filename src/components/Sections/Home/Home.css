@@ -197,7 +197,7 @@ h3.my-profession span
         flex-direction: column;
     }
 }
-@media (max-width: 349px) {
+@media (max-width: 372px) {
     .home .home-info .btn 
     {
         width: 100%;

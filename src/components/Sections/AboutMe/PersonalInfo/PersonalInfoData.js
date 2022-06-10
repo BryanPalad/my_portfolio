@@ -21,9 +21,15 @@ export default function PersonalInfoData({ age }) {
       style: false,
     },
     {
-      icon: "fa-solid fa-envelope",
-      desc: "Email :",
-      span: "paladbryanj@gmail.com",
+      icon: "fa-solid fa-laptop",
+      desc: "Occupation :",
+      span: "Open for a Job Opportunity",
+      style: true,
+    },
+    {
+      icon: "fa-solid fa-person",
+      desc: "Status :",
+      span: "Single",
       style: false,
     },
     {
@@ -44,12 +50,7 @@ export default function PersonalInfoData({ age }) {
       span: "Laguna",
       style: false,
     },
-    {
-      icon: "fa-solid fa-laptop",
-      desc: "Status :",
-      span: "Open for a Job",
-      style: true,
-    },
+  
   ];
   return (
     <>

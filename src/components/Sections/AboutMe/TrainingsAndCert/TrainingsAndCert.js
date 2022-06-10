@@ -5,8 +5,8 @@ import "./TrainingsAndCert.css";
 export default function TrainingsAndCert() {
   const trainingsandcerts = [
     {
-      date: "Dec 2019 - March 2019",
-      title: "IT Desktop Support OJT (Teletech Customer Care Management Philippines Inc.)",
+      date: "Dec 2019 - March 2022",
+      title: "IT Desktop Support Intern (Teletech Customer Care Management Philippines Inc.)",
       desc: "Maintains, analyzes, troubleshoots, upgrades, replaces and repairs computer systems hardware and computer peripherals.",
     },
     {
@@ -52,7 +52,7 @@ export default function TrainingsAndCert() {
                     <img
                       src="../images/simplilearn.png"
                       alt="Simplilearn"
-                      style={{ width: "20%" }}
+                      style={{ width: "150px" }}
                       title="Simplilearn"
                     ></img>
                   </a>
@@ -66,6 +66,31 @@ export default function TrainingsAndCert() {
                     <br />
                     <a href="ReactJs.pdf" target="_blank">
                       React Js Course
+                    </a>
+                  </div>
+                </p>
+              </Fade>
+            </div>
+
+            <div className="timeline-item">
+              <div className="circle-dot"></div>
+              <h3 className="timeline-date">
+                <i className="fa fa-calendar"></i> May 2022
+              </h3>
+              <Fade bottom>
+                <h4 className="timeline-title">
+                    <img
+                      src="../images/modernresolve.png"
+                      alt="modernresolve"
+                      style={{ width: "150px", marginBottom: '-15px'}}
+                      title="Modern Resolve"
+                    ></img>
+                </h4>
+                <p className="timeline-text">
+                  {/* <a href='.pdf' download=".pdf"> */}
+                  <div className="mdr">
+                    <a href="COE_MDR.pdf" target="_blank">
+                      Modern Code Camp
                     </a>
                   </div>
                 </p>
