@@ -92,8 +92,9 @@ export default function AboutMe() {
                   </h3>
                 </Fade>
                 <p>
-                  BS Information Technology Graduate year 2019, landed my first job in a Packaging Company as an Office Staff and spent 2 years and 3 months,
-                  I've decided to left my current job and pursue my dream job.
+                  BS Information Technology Graduate year 2019, became a lead programmer in my college days and had an experience 
+                  using C#, MySQL and PHP on our thesis, despite not having enough resources such as stable internet connection and a laptop. Unfortunately landed my first job in a non-tech company
+                  and spent almost 2 years and 3 months as an Admin Staff. I've decided to leave my current job, i will go back and pursue this programming career.
                 </p>
               </div>
             </div>

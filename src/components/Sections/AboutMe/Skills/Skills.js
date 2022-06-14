@@ -5,7 +5,7 @@ import "./Skills.css";
 export default function Skills() {
   const proficient = ["html.png", "css.png", "javascript.png", "bootstrap.png"];
   const knowledgeable = ["c-sharp.png", "php.png","react.png","vuejs.png"];
-  const toolsused = ["github.png", "vscode.png", "mysql.png"];
+  const toolsused = ["mysql.png","vscode.png","github.png"];
   return (
     <div className="skills padd-15">
       <h3 className="title">Technical Skills</h3>
@@ -22,7 +22,7 @@ export default function Skills() {
         </div>
         <div className="skill-item padd-15">
           <div className="basic-skill">
-            <h4><i>Basic Knowledge</i></h4>
+            <h4><i>Basic to Mid Knowledge</i></h4>
             <Fade bottom>
               {knowledgeable.map((value, index) => {
                 return <img key={index} src={`../../../images/${value}`} alt="skills"></img>;

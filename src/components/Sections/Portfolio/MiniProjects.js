@@ -38,14 +38,6 @@ export default function MiniProjects() {
                 <div className="portfolio-img">
                   <img src={images} alt="portfolio"/>
                   <h2>{title}</h2>
-                  {/* <div className="links">
-                    <a className="view-demo" href={demo} target="_blank" rel="noreferrer">
-                      Demo <i className="fa-solid fa-eye"></i>
-                    </a>
-                    <a className="view-git" href={github} target="_blank" rel="noreferrer">
-                      Github <i className="fab fa-github"></i>
-                    </a>
-                  </div> */}
                   <div className="card-buttons">
                     <div className="card-items">
                       <a href={demo} target="_blank" rel="noreferrer">

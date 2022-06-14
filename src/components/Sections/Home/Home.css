@@ -191,6 +191,11 @@ h3.my-profession span
         display: none;
     }
 }
+@media (max-width: 448px) {
+    .home .home-info p {
+        text-align: center;
+    }
+}
 @media (max-width: 412px) {
     .hello > * {
         display: flex;

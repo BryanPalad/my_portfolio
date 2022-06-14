@@ -87,10 +87,9 @@ export default function TrainingsAndCert() {
                     ></img>
                 </h4>
                 <p className="timeline-text">
-                  {/* <a href='.pdf' download=".pdf"> */}
                   <div className="mdr">
                     <a href="COE_MDR.pdf" target="_blank">
-                      Modern Code Camp
+                      Modern Code Camp (Advanced Web Development)
                     </a>
                   </div>
                 </p>

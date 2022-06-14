@@ -25,9 +25,9 @@ export default function Home() {
                     steps={[
                       " Web Developer 💻",
                       1000,
-                      " IT Graduate 🎓",
-                      1000,
                       " Aspiring Full Stack Dev ⏳",
+                      1000,
+                      " IT Graduate 🎓",
                       1000,
                     ]}
                   />
