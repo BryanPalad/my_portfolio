@@ -12,6 +12,63 @@ export default function Modals({
   title,
   description,
 }) {
+
+  const sliderImg = [
+    {
+      source:'images/portfolio/FernandezDentalClinic.PNG',
+    },
+    {
+      source:'images/portfolio/fdc_signup.PNG',
+    },
+    {
+      source:'images/portfolio/fdc_patient.PNG',
+    },
+    {
+      source:'images/portfolio/fdc_appointment.PNG',
+    },
+    {
+      source:'images/portfolio/FDC_dashboard.PNG',
+    }
+  ];
+
+  const functionsList = [
+    {
+        functions: '*Email Verification at Registration.'
+    },
+    {
+        functions: '*Book an Appointment based on available time and date created by the dentists.'
+    },
+    {
+        functions: '*Automated SMS Notification for Approved and Upcoming Appointments.'
+    },
+    {
+        functions: '*Data or images can be modified through systems backend.'
+    },
+  ];
+
+  const toolsUsed = [
+    {
+      toolImage: '../../../images/php.png',
+      desc: 'php',
+    },
+    {
+      toolImage: '../../../images/css.png',
+      desc: 'css',
+    },
+    {
+      toolImage: '../../../images/bootstrap.png',
+      desc: 'bootstrap',
+    },
+    {
+      toolImage: '../../../images/mysql.png',
+      desc: 'mysql',
+    },
+    {
+      toolImage: '../../../images/sublime.png',
+      desc: 'sublime',
+    },
+
+  ]
   return (
     <>
       <Modal
@@ -29,17 +86,9 @@ export default function Modals({
           <Typography id="modal-modal-description" sx={{ mt: 2 }}>
             <div className="slide-container">
               <Slide duration={2000} transitionDuration={800}>
-                <img
-                  src="images/portfolio/FernandezDentalClinic.PNG"
-                  alt="portfolio"
-                />
-                <img src="images/portfolio/fdc_signup.PNG" alt="portfolio" />
-                <img src="images/portfolio/fdc_patient.PNG" alt="portfolio" />
-                <img
-                  src="images/portfolio/fdc_appointment.PNG"
-                  alt="portfolio"
-                />
-                <img src="images/portfolio/FDC_dashboard.PNG" alt="portfolio" />
+                {sliderImg.map(({source}) => {
+                  return <img src={source} alt='portfolio'/>
+                })}
               </Slide>
               <hr className="horizontal-line" />
             </div>
@@ -52,16 +101,9 @@ export default function Modals({
                       Main Functions
                     </h4>
                     <ul className="function-desc">
-                      <li>Login / Sign up Patients.</li>
-                      <li>Email Verification at Registration.</li>
-                      <li>
-                        Book an Appointment based on available time and date
-                        created by the dentists.
-                      </li>
-                      <li>
-                        Automated SMS Notification for Approved and Upcoming
-                        Appointments.
-                      </li>
+                      {functionsList.map(({functions}) => {
+                        return <li>{functions}</li>
+                      })}
                     </ul>
                   </div>
                 </div>
@@ -72,29 +114,21 @@ export default function Modals({
                     </h4>
                     <div className="row">
                       <div className="programming-tools">
-                        <img src="../../../images/php.png" alt="php"></img>
-                        <img src="../../../images/css.png" alt="css"></img>
-                        <img
-                          src="../../../images/bootstrap.png"
-                          alt="bootstrap"
-                        ></img>
-                        <img src="../../../images/mysql.png" alt="mysql"></img>
-                        <img
-                          src="../../../images/sublime.png"
-                          alt="sublime"
-                        ></img>
+                        {toolsUsed.map(({toolImage, desc}) => {
+                          return <img src={toolImage} alt={desc}/>
+                        })}
                       </div>
                     </div>
                     <div className="programming-demo-btn">
                       <div className="row">
-                        <a
+                        {/* <a
                           className="demo"
                           href="http://localhost/I.TSpec%20Appointment%20System/index.php"
                           target="_blank"
                           rel="noreferrer"
                         >
                           Demo <i className="fa-solid fa-eye"></i>
-                        </a>
+                        </a> */}
                         <a
                           className="git"
                           href="https://github.com/BryanPalad/FernandezDentalClinic"

@@ -92,9 +92,9 @@ export default function AboutMe() {
                   </h3>
                 </Fade>
                 <p>
-                  BS Information Technology Graduate year 2019, became a lead programmer in my college days and had an experience 
-                  using C#, MySQL and PHP on our thesis, despite not having enough resources such as stable internet connection and a laptop. Unfortunately landed my first job in a non-tech company
-                  and spent almost 2 years and 3 months as an Admin Staff. I've decided to leave my current job, i will go back and pursue this programming career.
+                  BS Information Technology Graduate year 2019, became a lead programmer on our thesis projects and had an experience 
+                  using C#, MySQL and PHP, despite not having enough resources such as stable internet connection for self learning. Landed my first job in a non-tech company
+                  and spent almost 2 years and 3 months as an Admin Staff. I've decided to leave my current job, move forward and pursue this programming career.
                 </p>
               </div>
             </div>
@@ -110,7 +110,7 @@ export default function AboutMe() {
                 <Tabs value={value} onChange={handleChange} textColor="primary" aria-label="basic tabs example" TabIndicatorProps={{style: {backgroundColor:'var(--skin-color)'}}} centered>
                   <Tab label={<span style={tabStyle}>Experience</span>} {...a11yProps(0)} />
                   <Tab label={<span style={tabStyle}>Education</span>} {...a11yProps(1)} />
-                  <Tab label={<span style={tabStyle}>Certifications</span>} {...a11yProps(2)} />
+                  <Tab label={<span style={tabStyle}>Trainings</span>} {...a11yProps(2)} />
                 </Tabs>
               </Box>
               <TabPanel value={value} index={0}>

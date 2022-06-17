@@ -16,6 +16,12 @@ export default function MiniProjects() {
       title: 'Tesla Clone',
     },
     {
+      images: "images/portfolio/Weather App.PNG",
+      demo: "https://miniweather-news-app.netlify.app/",
+      github: "https://github.com/BryanPalad/Weather-News-App",
+      title: 'Weather/News App',
+    },
+    {
       images: "images/portfolio/Expense.PNG",
       demo: "https://expensetrackermini.netlify.app/",
       github: "https://github.com/BryanPalad/expenses_tracker_redux",
@@ -42,7 +48,7 @@ export default function MiniProjects() {
                     <div className="card-items">
                       <a href={demo} target="_blank" rel="noreferrer">
                       <h3 className="live">Live Demo</h3>
-                      <i className="fa-solid fa-eye"></i>
+                      <i class="fa-solid fa-arrow-up-right-from-square"></i>
                       </a>
                     </div>
                     <div className="card-items">

@@ -171,7 +171,9 @@
 }
 .functions .programming-heading .programming-demo-btn
 {
-    margin-left: 25%;
+    margin-top: -10px;
+    display: flex;
+    justify-content: center;
 }
 .functions .programming-heading .programming-demo-btn .fa-github
 {
@@ -180,7 +182,6 @@
 .functions .programming-heading .programming-demo-btn .demo,
 .functions .programming-heading .programming-demo-btn .git
 {
-    margin-right: 10px;
     border: 1px solid black;
     border-radius: 5px;
     padding: 2px 5px;

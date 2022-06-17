@@ -69,12 +69,12 @@ export default function Projects() {
               description={description}
             />
                   <div className="card-buttons">
-                    <div className="card-items">
+                    {/* <div className="card-items">
                       <a href="http://localhost/I.TSpec%20Appointment%20System/index.php" target="_blank" rel="noreferrer">
                       <h3>Live Demo</h3>
                       <i className="fa-solid fa-eye"></i>
                       </a>
-                    </div>
+                    </div> */}
                     <div className="card-items">
                     <a href="https://github.com/BryanPalad/FernandezDentalClinic" target="_blank" rel="noreferrer">
                       <h3>Github</h3>
