@@ -10,6 +10,7 @@ import webdevelopment from "./images/webdevelopment.jpg";
 import resonsivedesign from "./images/responsivedesign.jpg";
 import unknown from "./images/unknown.jpg";
 import { Link } from "react-scroll";
+import Particles from "../../Particles";
 
 export default function Services() {  
   const services = [
@@ -46,6 +47,7 @@ export default function Services() {
   ];
   return (
     <section className="service section" id="3">
+      <Particles/>
       <div className="container">
         <div className="row">
           <div className="section-title padd-15">

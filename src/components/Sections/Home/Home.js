@@ -4,31 +4,12 @@ import Typical from "react-typical";
 import { Link } from "react-scroll";
 import Fade from "react-reveal/Fade";
 import HomeData from "./HomeData";
-import Particles from 'react-particles-js';
-// import image from './assets/images/react.png'
+import Particles from "../../Particles";
 export default function Home() {
 
   return (
     <section className="home section" id="1">
-       <Particles style={{position: 'absolute', left: '0', overflow: 'hidden'}}
-    params={{
-	    "particles": {
-	        "number": {
-	            "value": 50
-	        },
-	        "size": {
-	            "value": 3
-	        }
-	    },
-	    "interactivity": {
-	        "events": {
-	            "onhover": {
-	                "enable": true,
-	                "mode": "repulse"
-	            }
-	        }
-	    }
-	}} />
+      <Particles/>
       <div className="container">
         <div className="row">
           <div className="home-info padd-15">
