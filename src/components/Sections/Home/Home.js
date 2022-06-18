@@ -6,7 +6,7 @@ import Fade from "react-reveal/Fade";
 import HomeData from "./HomeData";
 import Particles from "../../Particles";
 export default function Home() {
-
+  const name = '<Bryan Palad/>'
   return (
     <section className="home section" id="1">
       <Particles/>
@@ -15,7 +15,7 @@ export default function Home() {
           <div className="home-info padd-15">
             <Fade bottom>
               <h3 className="hello">
-                Hello, my name is <span className="name">Bryan Palad</span>
+                Hello, my name is <span className="name">{name}</span>
               </h3>
               <h3 className="my-profession">
                 I'm a

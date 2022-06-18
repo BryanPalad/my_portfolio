@@ -37,7 +37,7 @@ export default function MiniProjects() {
   return (
     <div className="row">
       <Fade bottom>
-        {miniproject.map(({ images, demo, github, title }) => {
+        {miniproject.map(({ images, demo, github, title, description}) => {
           return (
             <div className="portfolio-item padd-15">
               <div className="portfolio-item-inner shadow-dark">
