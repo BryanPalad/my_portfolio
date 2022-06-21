@@ -27,6 +27,11 @@
     height: 25%;
     width: 25%;
 }
+
+@keyframes translateinfinite {
+	100% { transform:translateX(calc(-180px * 12));  }
+}
+
 @media (max-width: 767px)
 {   
     .about .about-content .skills .skill-item

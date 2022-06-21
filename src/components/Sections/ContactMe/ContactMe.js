@@ -70,20 +70,20 @@ export default function ContactMe() {
     setLoading(true);
     setIng("ing");
 
-    // emailjs.sendForm(
-    //     "service_r3c2acf",
-    //     "gmail_template",
-    //     form.current,
-    //     "GXerigEHG4Y5D03xO"
-    //   )
-    //   .then(
-    //     (result) => {
-    //       console.log(result.text);
-    //     },
-    //     (error) => {
-    //       console.log(error.text);
-    //     }
-    //   );
+    emailjs.sendForm(
+        "service_r3c2acf",
+        "gmail_template",
+        form.current,
+        "GXerigEHG4Y5D03xO"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
 
     setTimeout(() => {
       setFormValues(initialValues);

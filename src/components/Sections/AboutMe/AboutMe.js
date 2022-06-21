@@ -95,9 +95,10 @@ export default function AboutMe() {
                   </h3>
                 </Fade>
                 <p>
-                  BS Information Technology Graduate year 2019, became a lead programmer on our thesis projects and had an experience 
-                  using C#, MySQL and PHP, despite not having enough resources such as stable internet connection for self learning. Landed my first job in a non-tech company
-                  and spent almost 2 years and 3 months as an Admin Staff. I've decided to leave my current job, move forward and pursue this programming career.
+                  BS Information Technology graduate year 2019, became a lead programmer on our 2 thesis projects and had an experience 
+                  using C#, MySQL and PHP despite not having enough resources such as stable internet connection for self learning. Landed my first job in a non-tech company
+                  where i spent almost 2 years and 3 months as an Admin Staff. I suddenly thought to myself, it's about time to get back to coding and so i've decided 
+                  to leave my current job, move forward and pursue this programming career.
                 </p>
               </div>
             </div>

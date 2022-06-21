@@ -3,11 +3,11 @@ import Particle from 'react-particles-js'
 const Particles = () => {
   return (
     <div>
-         <Particle style={{position: 'absolute',left: 0, height: 'auto', overflow: 'hidden', display: 'flex', justifyContent:'center', alignItems: 'center'}}
+         <Particle style={{position: 'absolute',left: 0, minHeight: '190vh', height: 'auto', overflow: 'hidden', display: 'flex', justifyContent:'center', alignItems: 'center'}}
   params={{
     "particles": {
         "number": {
-            "value": 60,
+            "value": 50,
             "density": {
                 "enable": true,
                 "value_area": 1500
@@ -15,7 +15,7 @@ const Particles = () => {
         },
         "line_linked": {
             "enable": true,
-            "opacity": 0.03
+            "opacity": 0.02
         },
         "move": {
             "direction": "center",
