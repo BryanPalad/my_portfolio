@@ -59,6 +59,7 @@ export default function Projects() {
               alt="portfolio"
               onClick={handleOpen}
               title="view details"
+              className="collegeProject"
             />
             <h2>Online Dental Appointment System</h2>
             <Modals

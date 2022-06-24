@@ -17,7 +17,7 @@ export default function ContactMeData({
     {
       icon: "fa fa-phone",
       heading: "Call/Text Me On",
-      desc: "+63 945-560-2846",
+      desc: "+63-945-560-2846",
       image: false,
       link: false,
       style: false,

@@ -83,10 +83,39 @@
     height: 100%;
     width: 100%;
     display: block;
-}
-.portfolio-img:hover h2 {
     opacity: 1;
 }
+.portfolio .portfolio-item-inner .portfolio-img .collegeProject 
+{
+    height: 100%;
+    width: 100%;
+    display: block !important;
+    opacity: 1 !important;
+}
+.portfolio .portfolio-item-inner .portfolio-img video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    display: block;
+    top: 0;
+    opacity: 1;
+    z-index: -1;
+}
+.portfolio .portfolio-item-inner .portfolio-img img:hover
+{
+    height: 100%;
+    width: 100%;
+    display: block;
+    opacity: 0;
+}
+.portfolio .portfolio-item-inner .portfolio-img video:hover {
+    opacity: 1;
+}
+.portfolio-img:hover h2{
+    opacity: 1;
+}
+
 .portfolio-img h2 {
     position: absolute;
     display: flex;
@@ -97,6 +126,7 @@
     font-weight: 900;
     color: var(--skin-color);
 }
+
 .card-buttons {
     display: flex;
     flex-direction: row;
