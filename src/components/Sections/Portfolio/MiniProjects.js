@@ -1,13 +1,12 @@
 import React from "react";
 import Fade from "react-reveal/Fade";
-
 export default function MiniProjects() {
   const miniproject = [
     {
       images: "images/portfolio/Calculator.PNG",
       demo: "https://reactjscalculator1.netlify.app/",
       github: "https://github.com/BryanPalad/calculator_reactjs",
-      title: 'Calculator',
+      title: 'Simple Calculator',
     },
     {
       images: "images/portfolio/Tesla-clone.PNG",
@@ -37,7 +36,7 @@ export default function MiniProjects() {
   return (
     <div className="row">
       <Fade bottom>
-        {miniproject.map(({ images, demo, github, title, description}) => {
+        {miniproject.map(({ images, demo, github, title}) => {
           return (
             <div className="portfolio-item padd-15">
               <div className="portfolio-item-inner shadow-dark">

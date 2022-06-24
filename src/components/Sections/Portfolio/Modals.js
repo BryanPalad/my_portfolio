@@ -42,7 +42,7 @@ export default function Modals({
         functions: '*Automated SMS Notification for Approved and Upcoming Appointments.'
     },
     {
-        functions: '*Data or images can be modified through systems backend.'
+        functions: '*Data or images can be modified through systems backend (settings tab).'
     },
   ];
 

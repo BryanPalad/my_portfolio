@@ -60,6 +60,7 @@ export default function Services() {
           {services.map(({title, desc, img}) => {
             return <div className="service-item padd-15">
             <div className="service-item-inner">
+              <Fade bottom>
             <Card
                   sx={{      
                     maxWidth: 350,
@@ -92,7 +93,7 @@ export default function Services() {
                     </Link>
                   </CardActionArea>
                 </Card>
-              
+                </Fade>
             </div>
           </div>
           })}

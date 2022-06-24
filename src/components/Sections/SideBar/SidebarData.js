@@ -17,6 +17,7 @@ export default function SidebarData({
   activecontacts,
   year
 }) {
+
   return (
     <div className="aside">
       <div className="logo">
@@ -27,7 +28,7 @@ export default function SidebarData({
       <div className="nav-toggler">
         <span onClick={menu}></span>
       </div>
-      <ul className="nav">
+       <ul className="nav">
         <Link
           activeClass="active"
           to="home section"
@@ -106,12 +107,14 @@ export default function SidebarData({
               href="#contact"
               className={activecontact}
               onClick={activecontacts}
+
             >
               <i className="fa fa-comments"></i> Contact
             </a>
           </li>
         </Link>
       </ul>
+     
       <div className="copyright">Developed by Bryan Palad © {year}</div>
       <span onClick={activehomes}>
         <ScrollUpButton />

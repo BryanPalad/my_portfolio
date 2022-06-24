@@ -13,6 +13,7 @@ import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import Particles from "../../Particles";
+import Accomplishments from "./Accomplishments/Accomplishments";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -109,7 +110,10 @@ export default function AboutMe() {
             <div className="row">
               <Skills />
             </div>
-            <Box sx={{ width: '100%' }}>
+            <div className="row">
+              <Accomplishments />
+            </div>
+            {/* <Box sx={{ width: '100%' }}>
               <Box sx={{ borderBottom: 1, borderColor: 'divider'}}>
                 <Tabs value={value} onChange={handleChange} textColor="primary" aria-label="basic tabs example" TabIndicatorProps={{style: {backgroundColor:'var(--skin-color)'}}} centered>
                   <Tab label={<span style={tabStyle}>Experience</span>} {...a11yProps(0)} />
@@ -126,7 +130,7 @@ export default function AboutMe() {
               <TabPanel value={value} index={2}>
                 <TrainingsAndCert />
               </TabPanel>
-            </Box>
+            </Box> */}
           </div>
         </div>
       </div>

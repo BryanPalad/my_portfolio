@@ -3,6 +3,7 @@ import Fade from "react-reveal/Fade";
 import "./TrainingsAndCert.css";
 
 export default function TrainingsAndCert() {
+
   const trainingsandcerts = [
     {
       date: "Dec 2019 - March 2022",
