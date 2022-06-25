@@ -1,6 +1,6 @@
 import React from "react";
 import "./Sidebar.css";
-import ScrollUpButton from "react-scroll-up-button";
+import ScrollToTop from "react-scroll-to-top";
 
 export default function SidebarData({
   menu,
@@ -25,8 +25,8 @@ export default function SidebarData({
           <span> Bryan </span>
         </a>
       </div>
-      <div className="nav-toggler">
-        <span onClick={menu}></span>
+      <div onClick={menu} className="nav-toggler">
+        <span></span>
       </div>
        <ul className="nav">
         <Link
@@ -117,7 +117,11 @@ export default function SidebarData({
      
       <div className="copyright">Developed by Bryan Palad © {year}</div>
       <span onClick={activehomes}>
-        <ScrollUpButton />
+        <ScrollToTop smooth
+        height={22}
+        width={22}
+        top={4500}
+        />
       </span>
     </div>
   );

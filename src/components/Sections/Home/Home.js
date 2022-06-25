@@ -15,20 +15,20 @@ export default function Home() {
           <div className="home-info padd-15">
             <Fade bottom>
               <h3 className="hello">
-                Hello, my name is <span className="name">{name}</span>
+                Hi, my name is <span className="name">{name}</span>
               </h3>
               <h3 className="my-profession">
                 I'm a
-                <span className="typing" style={{ fontSize: "28px" }}>
+                <span className="typing" style={{ fontSize: "25px" }}>
                   <Typical
                     wrapper="h3.my-profession"
                     loop={Infinity}
                     steps={[
-                      " Web Developer 💻",
+                      " Web Developer",
                       1000,
-                      " Aspiring Full Stack Dev ⏳",
+                      " BSIT Graduate",
                       1000,
-                      " IT Graduate 🎓",
+                      " Aspiring Full Stack Dev",
                       1000,
                     ]}
                   />
@@ -45,8 +45,8 @@ export default function Home() {
               duration={500}
             >
               <Fade bottom>
-                <a href="#about" id="hiremebtn" className="btn hire-me">
-                  Learn More
+                <a href="#about" id="hiremebtn" className="btn hire-me arrow">
+                  Learn More 
                 </a>
                 
               </Fade>

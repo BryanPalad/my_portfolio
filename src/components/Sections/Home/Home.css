@@ -12,14 +12,14 @@
 }
 h3.hello
 {
-    font-size: 28px;
+    font-size: 30px;
     margin: 15px 0;
     
 }
 h3.hello span 
 {
     font-family: Poppins;
-    font-size: 25px;
+    font-size: 28px;
     font-weight: 700;
     color: var(--skin-color);
 }
@@ -63,30 +63,45 @@ h3.my-profession span
     color: var(--text-black-700);
     text-align: justify;
 }
-.home-img::after
+.arrow::after {
+    display: inline-block;
+    padding-left: 8px;
+    content: "\21E8";
+   /* \0279E&#34; */
+    -webkit-transition: transform 0.3s ease-out;
+    -moz-transition: transform 0.3s ease-out;
+    -ms-transition: transform 0.3s ease-out;
+    -o-transition: transform 0.3s ease-out;
+    transition: transform 0.3s ease-out;
+}
+
+.arrow:hover::after {
+    content: "\21E9";
+}
+/* .home-img::after
 {
-    /* content: '';
+    content: '';
     position: absolute;
     height: 60px;
     width: 60px;
     border-bottom: 10px solid var(--skin-color);
     border-right: 10px solid var(--skin-color);
     right: 25px;
-    bottom: -30px; */
+    bottom: -30px;
     
 }
 .home-img::before
 {
-    /* content: '';
+    content: '';
     position: absolute;
     height: 60px;
     width: 60px;
     border-top: 10px solid var(--skin-color);
     border-left: 10px solid var(--skin-color);
     left: 25px;
-    top: -30px; */
+    top: -30px;
 
-}
+} */
 /*RESPONSIVE*/
 @media (max-width: 991px)
 {    
