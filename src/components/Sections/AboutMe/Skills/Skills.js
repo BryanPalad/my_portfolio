@@ -1,11 +1,11 @@
 import React from "react";
 import Fade from "react-reveal/Fade";
 import "./Skills.css";
+import { useSelector } from "react-redux";
+import { selectSkills } from "../../../../redux/aboutMe/skillsSlice";
+
 export default function Skills() {
-  const proficient = ["html.png", "css.png", "javascript.png"];
-  const knowledgeable = ["c-sharp.png", "php.png","react.png","vuejs.png"];
-  const toolsused = ["mysql.png","vscode.png","github.png"];
-  const frameworks = ["bootstrap.png", "mui.png", 'antdesign.png'];
+  const skills = useSelector(selectSkills);
   return (
     <>
     <div className="skills padd-15">
@@ -15,8 +15,8 @@ export default function Skills() {
           <div classname="proficient-skill">
             <h4><i>Proficient in</i></h4>
             <Fade bottom>
-              {proficient.map((value, index) => {
-                return <img key={index} src={`../../../images/${value}`} alt="skills"></img>;
+              {skills[0].proficient.map((value, index) => {
+                return <img key={index} src={`../../../images/skills/${value}`} alt="skills"></img>;
               })}
             </Fade>
           </div>
@@ -25,8 +25,8 @@ export default function Skills() {
           <div className="basic-skill">
             <h4><i>Basic to Mid Knowledge</i></h4>
             <Fade bottom>
-              {knowledgeable.map((value, index) => {
-                return <img key={index} src={`../../../images/${value}`} alt="skills"></img>;
+              {skills[1].knowledgeable.map((value, index) => {
+                return <img key={index} src={`../../../images/skills/${value}`} alt="skills"></img>;
               })}
             </Fade>
           </div>
@@ -35,8 +35,8 @@ export default function Skills() {
           <div className="tools-used">
             <h4><i>Database / Tools Used</i></h4>
             <Fade bottom>
-              {toolsused.map((value, index) => {
-                return <img key={index} src={`../../../images/${value}`} alt="skills"></img>;
+              {skills[2].toolsused.map((value, index) => {
+                return <img key={index} src={`../../../images/skills/${value}`} alt="skills"></img>;
               })}
             </Fade>
           </div>
@@ -50,8 +50,8 @@ export default function Skills() {
           <div className="tools-used">
             <h4><i>Frameworks Used</i></h4>
             <Fade bottom>
-              {frameworks.map((value, index) => {
-                return <img key={index} src={`../../../images/${value}`} alt="skills"></img>;
+              {skills[3].frameworks.map((value, index) => {
+                return <img key={index} src={`../../../images/skills/${value}`} alt="skills"></img>;
               })}
             </Fade>
           </div>

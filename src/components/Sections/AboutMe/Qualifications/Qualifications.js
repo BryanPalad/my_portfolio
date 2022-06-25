@@ -11,8 +11,8 @@ export default function Qualifications() {
     <div className="qualifications padd-15">
       <div className="row">
         <div className="qualifications-info">
-          {qualifications.map(({ info }) => {
-            return <h3>{info}</h3>;
+          {qualifications.map((item, index) => {
+            return <h3 key={index}>{item.info}</h3>;
           })}
         </div>
       </div>

@@ -4,71 +4,17 @@ import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
 import { Slide } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
+import { useSelector } from "react-redux/es/exports";
+import { selectProject } from "../../../redux/portfolio/modalSlice";
 
 export default function Modals({
   open,
   handleClose,
   style,
   title,
-  description,
 }) {
+  const modal = useSelector(selectProject);
 
-  const sliderImg = [
-    {
-      source:'images/portfolio/FernandezDentalClinic.PNG',
-    },
-    {
-      source:'images/portfolio/fdc_signup.PNG',
-    },
-    {
-      source:'images/portfolio/fdc_patient.PNG',
-    },
-    {
-      source:'images/portfolio/fdc_appointment.PNG',
-    },
-    {
-      source:'images/portfolio/FDC_dashboard.PNG',
-    }
-  ];
-
-  const functionsList = [
-    {
-        functions: '*Email Verification at Registration.'
-    },
-    {
-        functions: '*Book an Appointment based on available time and date created by the dentists.'
-    },
-    {
-        functions: '*Automated SMS Notification for Approved and Upcoming Appointments.'
-    },
-    {
-        functions: '*Data or images can be modified through systems backend (settings tab).'
-    },
-  ];
-
-  const toolsUsed = [
-    {
-      toolImage: '../../../images/php.png',
-      desc: 'php',
-    },
-    {
-      toolImage: '../../../images/css.png',
-      desc: 'css',
-    },
-    {
-      toolImage: '../../../images/bootstrap.png',
-      desc: 'bootstrap',
-    },
-    {
-      toolImage: '../../../images/mysql.png',
-      desc: 'mysql',
-    },
-    {
-      toolImage: '../../../images/sublime.png',
-      desc: 'sublime',
-    },
-
-  ]
   return (
     <>
       <Modal
@@ -86,8 +32,8 @@ export default function Modals({
           <Typography id="modal-modal-description" sx={{ mt: 2 }}>
             <div className="slide-container">
               <Slide duration={2000} transitionDuration={800}>
-                {sliderImg.map(({source}) => {
-                  return <img src={source} alt='portfolio'/>
+                {modal[0].sliderImg.map((item, index) => {
+                  return <img src={item.source} alt='portfolio' key={index}/>
                 })}
               </Slide>
               <hr className="horizontal-line" />
@@ -101,8 +47,8 @@ export default function Modals({
                       Main Functions
                     </h4>
                     <ul className="function-desc">
-                      {functionsList.map(({functions}) => {
-                        return <li>{functions}</li>
+                      {modal[1].functionsList.map((item, index) => {
+                        return <li key={index}>{item.functions}</li>
                       })}
                     </ul>
                   </div>
@@ -114,8 +60,8 @@ export default function Modals({
                     </h4>
                     <div className="row">
                       <div className="programming-tools">
-                        {toolsUsed.map(({toolImage, desc}) => {
-                          return <img src={toolImage} alt={desc}/>
+                        {modal[2].toolsUsed.map((item, index) => {
+                          return <img src={item.toolImage} alt={item.desc} key={index}/>
                         })}
                       </div>
                     </div>

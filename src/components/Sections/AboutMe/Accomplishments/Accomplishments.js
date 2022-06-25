@@ -11,23 +11,23 @@ const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 const images = [
   {
     imgPath:
-      '/images/portfolio/cert1.PNG',
+      '/images/accomplishments/cert1.PNG',
   },
   {
     imgPath:
-      '/images/portfolio/cert2.PNG',
+      '/images/accomplishments/cert2.PNG',
     },
     {
     imgPath:
-      '/images/portfolio/cert3.PNG',
+      '/images/accomplishments/cert3.PNG',
   },
   {
     imgPath:
-      '/images/portfolio/cert4.PNG',
+      '/images/accomplishments/cert4.PNG',
   },
   {
     imgPath:
-      '/images/portfolio/cert5.jpg',
+      '/images/accomplishments/cert5.jpg',
   },
 ];
 

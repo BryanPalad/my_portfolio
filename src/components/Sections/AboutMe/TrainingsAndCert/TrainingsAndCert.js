@@ -1,21 +1,11 @@
 import React from "react";
 import Fade from "react-reveal/Fade";
 import "./TrainingsAndCert.css";
+import { useSelector } from "react-redux/es/hooks/useSelector";
+import { selectTrainingInfo } from "../../../../redux/aboutMe/trainingsSlice";
 
 export default function TrainingsAndCert() {
-
-  const trainingsandcerts = [
-    {
-      date: "Dec 2019 - March 2022",
-      title: "IT Desktop Support Intern (Teletech Customer Care Management Philippines Inc.)",
-      desc: "Maintains, analyzes, troubleshoots, upgrades, replaces and repairs computer systems hardware and computer peripherals.",
-    },
-    {
-      date: "March 2019",
-      title: "National Certification II (TESDA)",
-      desc: "Computer Systems Servicing (STI College Calamba)",
-    },
-  ];
+  const trainingsandcerts = useSelector(selectTrainingInfo);
   return (
     <div className="trainings">
       {/* <h3 className="title">Trainings & Certifications</h3> */}
@@ -23,16 +13,16 @@ export default function TrainingsAndCert() {
         <div className="timeline-box">
           <div className="timeline shadow-dark">
             {/* <!-- TIMELINE ITEM --> */}
-            {trainingsandcerts.map(({ date, title, desc }) => {
+            {trainingsandcerts.map((item, index) => {
               return (
-                <div className="timeline-item">
+                <div className="timeline-item" key={index}>
                   <div className="circle-dot"></div>
                   <h3 className="timeline-date">
-                    <i className="fa fa-calendar"></i> {date}
+                    <i className="fa fa-calendar"></i> {item.date}
                   </h3>
                   <Fade bottom>
-                    <h4 className="timeline-title">{title} </h4>
-                    <p className="timeline-text">{desc}</p>
+                    <h4 className="timeline-title">{item.title} </h4>
+                    <p className="timeline-text">{item.desc}</p>
                   </Fade>
                 </div>
               );
@@ -51,7 +41,7 @@ export default function TrainingsAndCert() {
                     rel="noreferrer"
                   >
                     <img
-                      src="../images/simplilearn.png"
+                      src="../images/trainings/simplilearn.png"
                       alt="Simplilearn"
                       style={{ width: "150px" }}
                       title="Simplilearn"
@@ -59,7 +49,6 @@ export default function TrainingsAndCert() {
                   </a>
                 </h4>
                 <p className="timeline-text">
-                  {/* <a href='.pdf' download=".pdf"> */}
                   <div className="simplilearn">
                     <a href="JavaScript.pdf" target="_blank">
                       Javascript Course
@@ -81,7 +70,7 @@ export default function TrainingsAndCert() {
               <Fade bottom>
                 <h4 className="timeline-title">
                     <img
-                      src="../images/modernresolve.png"
+                      src="../images/trainings/modernresolve.png"
                       alt="modernresolve"
                       style={{ width: "150px", marginBottom: '-15px'}}
                       title="Modern Resolve"

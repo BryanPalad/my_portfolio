@@ -1,5 +1,4 @@
 import React from "react";
-
 export default function PersonalInfoData({ age }) {
   const personalinfo = [
     {
@@ -54,21 +53,21 @@ export default function PersonalInfoData({ age }) {
   ];
   return (
     <>
-      {personalinfo.map(({ icon, desc, span, style }) => {
+      {personalinfo.map((item, index) => {
         return (
-          <div className="info-item padd-15">
-            {style ? (
+          <div className="info-item padd-15" key={index}>
+            {item.style ? (
               <p>
-                <i class={icon}></i> {desc}
-                {span === 'Employed' ? (
-                  <span style={{color: 'red'}}>{span}</span>
-                ):(<span style={{color: 'green'}}>{span}</span>)}
+                <i class={item.icon}></i> {item.desc}
+                {item.span === 'Employed' ? (
+                  <span style={{color: 'red'}}>{item.span}</span>
+                ):(<span style={{color: 'green'}}>{item.span}</span>)}
               </p>
             ) : (
               <>
                 <p>
-                  <i class={icon}></i> {desc}
-                  <span>{span}</span>
+                  <i class={item.icon}></i> {item.desc}
+                  <span>{item.span}</span>
                 </p>
               </>
             )}

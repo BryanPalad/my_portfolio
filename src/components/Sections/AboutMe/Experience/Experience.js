@@ -1,20 +1,11 @@
 import React from "react";
 import Fade from "react-reveal/Fade";
 import "./Experience.css";
+import { useSelector } from "react-redux/es/hooks/useSelector";
+import { selectExperienceInfo } from "../../../../redux/aboutMe/experienceSlice";
 
 export default function Experience() {
-  const experience = [
-    {
-      date: `Oct. 15 2019 - Jan. 15 2022 (2yrs & 3 months)`,
-      position: "Admin Office Staff (TripleStar Packaging Corporation)",
-      titleDesc1: "Quality Management System (QMS) Assistant",
-      titleDesc2: "Inventory Controller",
-      desc1:
-        "supports the  QMS head in all aspects of quality system operations. Internal auditing and daily maintenance/review of the quality system processes to ensure compliance and improvements. Focus on meeting customer requirements on a consistent basis.",
-      desc2:
-        "in charge of incoming and outgoing of raw materials through ERP system. Ensures that all stocks were monitored and all the delivery receipts were accurately checked before transmitting to accounting dept.",
-    },
-  ];
+  const experience = useSelector(selectExperienceInfo);
   return (
     <div className="experience">
       {/* <h3 className="title">Experience</h3> */}
@@ -23,21 +14,21 @@ export default function Experience() {
           <div className="timeline shadow-dark">
             {/* <!-- TIMELINE ITEM --> */}
             {experience.map(
-              ({ date, position, titleDesc1, titleDesc2, desc1, desc2 }) => {
+              (item, index) => {
                 return (
-                  <div className="timeline-item">
+                  <div className="timeline-item" key={index}>
                     <div className="circle-dot"></div>
                     <h3 className="timeline-date">
-                      <i className="fa fa-calendar"></i> {date}
+                      <i className="fa fa-calendar"></i> {item.date}
                     </h3>
                     <Fade bottom>
-                      <h4 className="timeline-title">{position}</h4>
+                      <h4 className="timeline-title">{item.position}</h4>
                       <p className="timeline-text" style={{marginBottom: '20px'}}>
-                        <b>{titleDesc1}</b> - {desc1}
+                        <b>{item.titleDesc1}</b> - {item.desc1}
                       </p>
-                      {desc2 && titleDesc2 ? (
+                      {item.desc2 && item.titleDesc2 ? (
                         <p className="timeline-text">
-                          <b>{titleDesc2}</b> - {desc2}
+                          <b>{item.titleDesc2}</b> - {item.desc2}
                         </p>
                       ) : (
                         <></>
