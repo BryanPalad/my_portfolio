@@ -15,7 +15,7 @@ const Particles = () => {
         },
         "line_linked": {
             "enable": true,
-            "opacity": 0.01
+            "opacity": 0.009
         },
         "move": {
             "direction": "center",
