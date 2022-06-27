@@ -63,16 +63,16 @@ export default function Modals({
                         })}
                       </div>
                     </div>
-                    <div className="programming-demo-btn">
+                    {/* <div className="programming-demo-btn">
                       <div className="row">
-                        {/* <a
+                        <a
                           className="demo"
                           href="http://localhost/I.TSpec%20Appointment%20System/index.php"
                           target="_blank"
                           rel="noreferrer"
                         >
                           Demo <i className="fa-solid fa-eye"></i>
-                        </a> */}
+                        </a>
                         <a
                           className="git"
                           href="https://github.com/BryanPalad/FernandezDentalClinic"
@@ -82,7 +82,7 @@ export default function Modals({
                           Github <i className="fab fa-github"></i>
                         </a>
                       </div>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>

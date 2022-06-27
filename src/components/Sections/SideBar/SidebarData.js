@@ -2,7 +2,6 @@ import React from "react";
 import "./Sidebar.css";
 import ScrollToTop from "react-scroll-to-top";
 
-
 export default function SidebarData({
   menu,
   Link,
