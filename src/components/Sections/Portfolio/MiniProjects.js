@@ -1,14 +1,13 @@
 import React from "react";
 import Fade from "react-reveal/Fade";
-import { useSelector } from "react-redux";
-import { selectMiniProjects } from "../../../redux/portfolio/miniProjectSlice";
+import { miniprojectObj } from "../../../constants/portfolio";
 
 export default function MiniProjects() {
-  const miniProject = useSelector(selectMiniProjects);
+  
   return (
     <div className="row">
       <Fade bottom>
-        {miniProject.map((item, index) => {
+        {miniprojectObj.map((item, index) => {
           return (
             <div className="portfolio-item padd-15" key={index}>
               <div className="portfolio-item-inner shadow-dark">
@@ -21,13 +20,13 @@ export default function MiniProjects() {
                   <h2>{item.title}</h2>
                   <div className="card-buttons">
                     <div className="card-items">
-                      <a href={item.demo} target="_blank" rel="noreferrer">
+                      <a href={`${item.demo}`} target="_blank" rel="noreferrer">
                       <h3 className="live">Live Demo</h3>
-                      <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                      <i className="fa-solid fa-arrow-up-right-from-square"></i>
                       </a>
                     </div>
                     <div className="card-items">
-                    <a href={item.github} target="_blank" rel="noreferrer">
+                    <a href={`${item.github}`} target="_blank" rel="noreferrer">
                       <h3 className="live">Github</h3>
                       <i className="fab fa-github"></i>
                       </a>

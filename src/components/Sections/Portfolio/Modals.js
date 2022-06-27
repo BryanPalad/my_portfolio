@@ -4,8 +4,7 @@ import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
 import { Slide } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
-import { useSelector } from "react-redux/es/exports";
-import { selectProject } from "../../../redux/portfolio/modalSlice";
+import { modalObj } from '../../../constants/portfolio';
 
 export default function Modals({
   open,
@@ -13,7 +12,6 @@ export default function Modals({
   style,
   title,
 }) {
-  const modal = useSelector(selectProject);
 
   return (
     <>
@@ -32,7 +30,7 @@ export default function Modals({
           <Typography id="modal-modal-description" sx={{ mt: 2 }}>
             <div className="slide-container">
               <Slide duration={2000} transitionDuration={800}>
-                {modal[0].sliderImg.map((item, index) => {
+                {modalObj[0].sliderImg.map((item, index) => {
                   return <img src={item.source} alt='portfolio' key={index}/>
                 })}
               </Slide>
@@ -47,7 +45,7 @@ export default function Modals({
                       Main Functions
                     </h4>
                     <ul className="function-desc">
-                      {modal[1].functionsList.map((item, index) => {
+                      {modalObj[1].functionsList.map((item, index) => {
                         return <li key={index}>{item.functions}</li>
                       })}
                     </ul>
@@ -60,7 +58,7 @@ export default function Modals({
                     </h4>
                     <div className="row">
                       <div className="programming-tools">
-                        {modal[2].toolsUsed.map((item, index) => {
+                        {modalObj[2].toolsUsed.map((item, index) => {
                           return <img src={item.toolImage} alt={item.desc} key={index}/>
                         })}
                       </div>

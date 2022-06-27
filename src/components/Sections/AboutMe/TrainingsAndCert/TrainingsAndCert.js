@@ -1,11 +1,9 @@
 import React from "react";
 import Fade from "react-reveal/Fade";
 import "./TrainingsAndCert.css";
-import { useSelector } from "react-redux/es/hooks/useSelector";
-import { selectTrainingInfo } from "../../../../redux/aboutMe/trainingsSlice";
-
+import { trainingsandcertsObj } from "../../../../constants/about";
 export default function TrainingsAndCert() {
-  const trainingsandcerts = useSelector(selectTrainingInfo);
+
   return (
     <div className="trainings">
       {/* <h3 className="title">Trainings & Certifications</h3> */}
@@ -13,7 +11,7 @@ export default function TrainingsAndCert() {
         <div className="timeline-box">
           <div className="timeline shadow-dark">
             {/* <!-- TIMELINE ITEM --> */}
-            {trainingsandcerts.map((item, index) => {
+            {trainingsandcertsObj.map((item, index) => {
               return (
                 <div className="timeline-item" key={index}>
                   <div className="circle-dot"></div>

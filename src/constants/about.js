@@ -62,4 +62,11 @@ export const skillsObj = [
     {
     frameworks: ["bootstrap.png", "mui.png", 'antdesign.png']
     }
-]
+];
+
+export const qualificationsObj = [
+  { info: "✔ Dedicated and hardworking individual" },
+  { info: "✔ Highly adaptable, Flexible, Well disciplined and keen on details" },
+  { info: "✔ Fast learner and have a strong will to learn" },
+  { info: "✔ Able to be a good leader and a follower" },
+];

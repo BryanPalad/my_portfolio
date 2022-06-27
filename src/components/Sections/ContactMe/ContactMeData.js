@@ -1,8 +1,7 @@
 import React from "react";
 import "./ContactMe.css";
 import { ClipLoader } from "react-spinners";
-import { useSelector } from "react-redux";
-import { selectContactInfo } from '../../../redux/contact/contactSlice';
+import {contactinfoObj} from '../../../constants/contact';
 
 import Fade from "react-reveal/Fade";
 export default function ContactMeData({
@@ -16,7 +15,6 @@ export default function ContactMeData({
   audioPlayer,
   NotificationSound,
 }) {
-  const contactInfo = useSelector(selectContactInfo);
 
   return (
     <section className="contact section" id="5">
@@ -32,18 +30,18 @@ export default function ContactMeData({
           <h3 className="contact-title padd-15">Do You Have Any Questions ?</h3>
           <h4 className="contact-sub-title padd-15">I'M AT YOUR SERVICES</h4>
           <div className="row">
-            {contactInfo.map((item, index) => {
+            {contactinfoObj.map((item, index) => {
               return (
                 <div className="contact-info-item padd-15" key={index}>
                   <div className="icon">
                     {item.style ? (
-                      <a href={item.link} target="_blank" rel="noreferrer">
-                        <i className={item.icon} style={{ fontSize: "25px" }}></i>
+                      <a href={`${item.link}`} target="_blank" rel="noreferrer">
+                        <i className={`${item.icon}`} style={{ fontSize: "25px" }}></i>
                       </a>
                     ) : (
                       <>
-                        <a href={item.link} target="_blank" rel="noreferrer">
-                          <i className={item.icon}></i>
+                        <a href={`${item.link}`} target="_blank" rel="noreferrer">
+                          <i className={`${item.icon}`}></i>
                         </a>
                       </>
                     )}

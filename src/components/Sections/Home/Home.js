@@ -8,7 +8,7 @@ import Particles from "../../Particles";
 export default function Home() {
   const name = '<Bryan Palad/>'
   return (
-    <section className="home section" id="1">
+    <section name='home' className="home section" id="1">
       <Particles/>
       <div className="container">
         <div className="row">

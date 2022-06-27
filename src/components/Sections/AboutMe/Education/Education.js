@@ -1,11 +1,8 @@
 import React from "react";
-import { useSelector } from "react-redux/es/exports";
-import { selectEducationInfo } from "../../../../redux/aboutMe/educationSlice";
 import "./Education.css";
 import Fade from "react-reveal/Fade";
-
+import { schoolObj } from "../../../../constants/about";
 export default function Education() {
-  const schoolInfo = useSelector(selectEducationInfo);
   return (
     <div className="education">
       {/* <h3 className="title">Education</h3> */}
@@ -13,7 +10,7 @@ export default function Education() {
         <div className="timeline-box-educ">
           <div className="timeline-educ shadow-dark">
             {/* education item start */}
-            {schoolInfo.map((item, index) => {
+            {schoolObj.map((item, index) => {
               return (
                 <div className="timeline-item-educ" key={index}>
                   <div className="circle-dot-educ"></div>
@@ -24,7 +21,7 @@ export default function Education() {
                   <Fade bottom>
                     <h4 className="timeline-title-educ">{item.level}</h4>
                     <div className="education-item">
-                      <a href={item.links} target="_blank" rel="noreferrer">
+                      <a href={`${item.links}`} target="_blank" rel="noreferrer">
                         <img src={item.images} alt="school"></img>
                       </a>
                       <span className="timeline-text-educ">{item.school}</span>

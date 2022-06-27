@@ -2,6 +2,7 @@ import React from "react";
 import "./Sidebar.css";
 import ScrollToTop from "react-scroll-to-top";
 
+
 export default function SidebarData({
   menu,
   Link,
@@ -54,7 +55,7 @@ export default function SidebarData({
         >
           <li>
             <a href="#about" className={activeabout} onClick={activeabouts}>
-            <i class="fa-regular fa-address-card"></i> About
+            <i className="fa-regular fa-address-card"></i> About
             </a>
           </li>
         </Link>

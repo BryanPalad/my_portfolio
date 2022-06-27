@@ -58,7 +58,7 @@ export default function PersonalInfoData({ age }) {
           <div className="info-item padd-15" key={index}>
             {item.style ? (
               <p>
-                <i class={item.icon}></i> {item.desc}
+                <i className={item.icon}></i> {item.desc}
                 {item.span === 'Employed' ? (
                   <span style={{color: 'red'}}>{item.span}</span>
                 ):(<span style={{color: 'green'}}>{item.span}</span>)}
@@ -66,7 +66,7 @@ export default function PersonalInfoData({ age }) {
             ) : (
               <>
                 <p>
-                  <i class={item.icon}></i> {item.desc}
+                  <i className={item.icon}></i> {item.desc}
                   <span>{item.span}</span>
                 </p>
               </>

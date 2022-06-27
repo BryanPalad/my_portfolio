@@ -17,7 +17,7 @@ const loadingAnimation = {
 function LoadingScreen() {
   const [completed, setCompleted] = useState(undefined);
 
-  useEffect(() => {
+  useEffect(() => { 
     setTimeout(() => {
         setCompleted(true);
     }, 2500);

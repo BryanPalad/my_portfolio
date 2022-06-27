@@ -1,11 +1,8 @@
 import React from "react";
 import Fade from "react-reveal/Fade";
 import "./Experience.css";
-import { useSelector } from "react-redux/es/hooks/useSelector";
-import { selectExperienceInfo } from "../../../../redux/aboutMe/experienceSlice";
-
+import { experienceObj } from "../../../../constants/about";
 export default function Experience() {
-  const experience = useSelector(selectExperienceInfo);
   return (
     <div className="experience">
       {/* <h3 className="title">Experience</h3> */}
@@ -13,7 +10,7 @@ export default function Experience() {
         <div className="timeline-box">
           <div className="timeline shadow-dark">
             {/* <!-- TIMELINE ITEM --> */}
-            {experience.map(
+            {experienceObj.map(
               (item, index) => {
                 return (
                   <div className="timeline-item" key={index}>

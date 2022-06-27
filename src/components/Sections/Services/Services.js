@@ -6,45 +6,11 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { CardActionArea } from "@mui/material";
-import webdevelopment from "./images/webdevelopment.jpg";
-import resonsivedesign from "./images/responsivedesign.jpg";
-import unknown from "./images/unknown.jpg";
 import { Link } from "react-scroll";
 import Particles from "../../Particles";
-
+import {servicesObj} from '../../../constants/services';
 export default function Services() {  
-  const services = [
-    {
-      title: "Web Development",
-      desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil velit ab itaque",
-      img: `${webdevelopment}`,
-    },
-    {
-      title: "Responsive Web Design",
-      desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil velit ab itaque",
-      img: `${resonsivedesign}`,
-    },
-    {
-      title: "In Progress",
-      desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil velit ab itaque",
-      img: "",
-    },
-    // {
-    //   title: "In Progress",
-    //   desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil velit ab itaque",
-    //   img: "",
-    // },
-    // {
-    //   title: "In Progress",
-    //   desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil velit ab itaque",
-    //   img: "",
-    // },
-    // {
-    //   title: "In Progress",
-    //   desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil velit ab itaque",
-    //   img: "",
-    // },
-  ];
+ 
   return (
     <section className="service section" id="3">
       <Particles/>
@@ -57,8 +23,8 @@ export default function Services() {
           </div>
         </div>
         <div className="row">
-          {services.map(({title, desc, img}) => {
-            return <div className="service-item padd-15">
+          {servicesObj.map((item, index) => {
+            return <div className="service-item padd-15" key={index}>
             <div className="service-item-inner">
               <Fade bottom>
             <Card
@@ -79,15 +45,15 @@ export default function Services() {
                       <CardMedia
                         component="img"
                         height="200"
-                        image={img === "" ? `${unknown}`: `${img}`}
+                        image={`${item.img}`}
                         alt="services image"
                       />
                       <CardContent>
                         <Typography gutterBottom variant="h5" component="div">
-                          {title}
+                          {item.title}
                         </Typography>
                         <Typography variant="body2" color="text.secondary">
-                          {desc}
+                          {item.desc}
                         </Typography>
                       </CardContent>
                     </Link>
