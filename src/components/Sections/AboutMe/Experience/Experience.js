@@ -1,9 +1,10 @@
 import React from "react";
 import Fade from "react-reveal/Fade";
 import "./Experience.css";
-import { experienceObj } from "../../../../constants/about";
-
+import { useSelector } from "react-redux/es/hooks/useSelector";
+import { selectExperience } from "../../../../redux/about/experienceSlice";
 export default function Experience() {
+  const experienceObj = useSelector(selectExperience);
   return (
     <div className="experience">
       <div className="row">

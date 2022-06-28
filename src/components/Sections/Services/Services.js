@@ -7,9 +7,10 @@ import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { CardActionArea } from "@mui/material";
 import { Link } from "react-scroll";
-import {servicesObj} from '../../../constants/services';
+import { useSelector } from "react-redux";
+import { selectServices } from "../../../redux/services/servicesSlice";
 export default function Services() {  
- 
+  const servicesObj = useSelector(selectServices);
   return (
     <section className="service section" id="3">
       <div className="container">

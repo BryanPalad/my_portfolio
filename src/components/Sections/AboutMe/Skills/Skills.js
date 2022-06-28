@@ -1,8 +1,10 @@
 import React from "react";
 import Fade from "react-reveal/Fade";
 import "./Skills.css";
-import { skillsObj } from "../../../../constants/about";
+import { useSelector } from "react-redux";
+import { selectSkills } from "../../../../redux/about/skillsSlice";
 export default function Skills() {
+  const skillsObj = useSelector(selectSkills);
   return (
     <>
     <div className="skills padd-15">

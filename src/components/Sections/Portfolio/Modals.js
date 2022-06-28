@@ -4,15 +4,15 @@ import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
 import { Slide } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
-import { modalObj } from '../../../constants/portfolio';
-
+import { useSelector } from "react-redux";
+import { selectProjectModal } from "../../../redux/portfolio/modalSlice";
 export default function Modals({
   open,
   handleClose,
   style,
   title,
 }) {
-
+  const modalObj = useSelector(selectProjectModal);
   return (
     <>
       <Modal

@@ -1,9 +1,9 @@
 import React from "react";
 import Fade from "react-reveal/Fade";
-import { miniprojectObj } from "../../../constants/portfolio";
-
+import { useSelector } from "react-redux";
+import { selectMiniProject } from "../../../redux/portfolio/miniProjectsSlice";
 export default function MiniProjects() {
-  
+  const miniprojectObj = useSelector(selectMiniProject);
   return (
     <div className="row">
       <Fade bottom>

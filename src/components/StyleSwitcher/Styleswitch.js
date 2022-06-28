@@ -1,7 +1,10 @@
 import React, { useState } from "react";
 import "./styleswitch.css";
-import {themeColorsObj} from '../../constants/styleswitch';
+import { useSelector } from "react-redux";
+import { selectThemeColors } from "../../redux/styleswitch/styleSwitchSlice";
 export default function Styleswitch() {
+  
+  const themeColorsObj = useSelector(selectThemeColors);
 
   const [open, setOpen] = useState(
     document.querySelector(".style-switcher-toggler")

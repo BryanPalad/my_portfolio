@@ -1,8 +1,9 @@
 import React from "react";
 import "./Qualifications.css";
-import { qualificationsObj } from "../../../../constants/about";
+import { useSelector } from "react-redux";
+import { selectQualifications } from "../../../../redux/about/qualificationsSlice";
 export default function Qualifications() {
-
+  const qualificationsObj = useSelector(selectQualifications);
   return (
     <div className="qualifications padd-15">
       <div className="row">

@@ -1,9 +1,11 @@
 import React from "react";
 import Fade from "react-reveal/Fade";
 import "./TrainingsAndCert.css";
-import { trainingsandcertsObj } from "../../../../constants/about";
-export default function TrainingsAndCert() {
+import { useSelector } from "react-redux";
+import {selectTrainingsAndCerts} from '../../../../redux/about/trainingsAndCertSlice';
 
+export default function TrainingsAndCert() {
+  const trainingsandcertsObj = useSelector(selectTrainingsAndCerts);
   return (
     <div className="trainings">
       {/* <h3 className="title">Trainings & Certifications</h3> */}

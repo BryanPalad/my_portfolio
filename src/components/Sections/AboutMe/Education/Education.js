@@ -1,8 +1,11 @@
 import React from "react";
 import "./Education.css";
 import Fade from "react-reveal/Fade";
-import { schoolObj } from "../../../../constants/about";
+import { selectSchool } from "../../../../redux/about/educationSlice";
+import { useSelector } from "react-redux/es/exports";
+
 export default function Education() {
+  const schoolObj = useSelector(selectSchool);
   return (
     <div className="education">
       {/* <h3 className="title">Education</h3> */}

@@ -1,8 +1,8 @@
 import React from "react";
 import "./ContactMe.css";
 import { ClipLoader } from "react-spinners";
-import {contactinfoObj} from '../../../constants/contact';
-
+import { useSelector } from "react-redux";
+import { selectContactInfo } from "../../../redux/contact/contactInfoSlice";
 import Fade from "react-reveal/Fade";
 export default function ContactMeData({
   form,
@@ -15,7 +15,7 @@ export default function ContactMeData({
   audioPlayer,
   NotificationSound,
 }) {
-
+  const contactinfoObj = useSelector(selectContactInfo);
   return (
     <section className="contact section" id="5">
       <div className="container">
