@@ -54,7 +54,7 @@ export const skillsObj = [
     proficient: ["html.png", "css.png", "javascript.png"]
     },
     {
-    knowledgeable: ["c-sharp.png", "php.png","react.png", "java.png"]
+    knowledgeable: ["java.png","php.png", "c-sharp.png", "react.png"]
     },
     {
     toolsused: ["mysql.png","vscode.png","github.png"]
