@@ -18,8 +18,7 @@ export default function PersonalInfo() {
       <div className="row">
         <div className="buttons padd-15">
           <Fade bottom>
-            {/* <a href="/images/myw3schoolsimage.jpg" download></a> */}
-            <a href="/My_Resume.pdf" download className="btn">
+            <a href="/Bryan_Palad_CV.pdf" download className="btn">
               {" "}
               Download CV
             </a>

@@ -83,6 +83,41 @@ export default function TrainingsAndCert() {
                 </p>
               </Fade>
             </div>
+
+            <div className="timeline-item">
+              <div className="circle-dot"></div>
+              <h3 className="timeline-date">
+                <i className="fa fa-calendar"></i> June 2022
+              </h3>
+              <Fade bottom>
+                <h4 className="timeline-title">
+                  <a
+                    href="https://www.mygreatlearning.com/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img
+                      src="../images/trainings/greatLearning.png"
+                      alt="Great Learning"
+                      style={{ width: "150px" }}
+                      title="Great Learning"
+                    ></img>
+                  </a>
+                </h4>
+                <p className="timeline-text">
+                  <div className="simplilearn">
+                    <a href="PHP_Cert.pdf" target="_blank">
+                      PHP Course
+                    </a>
+                    <br />
+                    <a href="Java_Cert.pdf" target="_blank">
+                      Java Course
+                    </a>
+                  </div>
+                </p>
+              </Fade>
+            </div>
+
           </div>
         </div>
       </div>

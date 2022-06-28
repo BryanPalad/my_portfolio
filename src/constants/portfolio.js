@@ -3,7 +3,7 @@ export const miniprojectObj = [
     images: "images/portfolio/Calculator.PNG",
     demo: "https://reactjscalculator1.netlify.app/",
     github: "https://github.com/BryanPalad/calculator_reactjs",
-    title: "Simple Calculator",
+    title: "Calculator",
     clip: "videos/calculatorClip.webm",
   },
   {
