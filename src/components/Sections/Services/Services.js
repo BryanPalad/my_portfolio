@@ -13,7 +13,7 @@ export default function Services() {
  
   return (
     <section className="service section" id="3">
-      <Particles/>
+      {/* <Particles/> */}
       <div className="container">
         <div className="row">
           <div className="section-title padd-15">

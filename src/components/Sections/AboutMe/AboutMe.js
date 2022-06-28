@@ -77,7 +77,7 @@ export default function AboutMe() {
 
   return (
     <section className="about section" id="2">
-      <Particles/>
+      {/* <Particles/> */}
       <div className="container">
         <div className="row">
           <div className="section-title padd-15">

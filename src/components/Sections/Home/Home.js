@@ -9,7 +9,7 @@ export default function Home() {
   const name = '<Bryan Palad/>'
   return (
     <section name='home' className="home section" id="1">
-      <Particles/>
+      {/* <Particles/> */}
       <div className="container">
         <div className="row">
           <div className="home-info padd-15">

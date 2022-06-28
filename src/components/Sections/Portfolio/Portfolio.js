@@ -8,7 +8,7 @@ import Particles from "../../Particles";
 export default function Portfolio() {
   return (
     <section className="portfolio section" id="4">
-      <Particles/>
+      {/* <Particles/> */}
       <div className="container">
         <div className="row">
           <div className="section-title padd-15">
