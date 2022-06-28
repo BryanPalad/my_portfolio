@@ -12,7 +12,6 @@ import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
-import Particles from "../../Particles";
 // import Accomplishments from "./Accomplishments/Accomplishments";
 
 function TabPanel(props) {
@@ -77,7 +76,6 @@ export default function AboutMe() {
 
   return (
     <section className="about section" id="2">
-      {/* <Particles/> */}
       <div className="container">
         <div className="row">
           <div className="section-title padd-15">

@@ -4,12 +4,10 @@ import Typical from "react-typical";
 import { Link } from "react-scroll";
 import Fade from "react-reveal/Fade";
 import HomeData from "./HomeData";
-import Particles from "../../Particles";
 export default function Home() {
   const name = '<Bryan Palad/>'
   return (
     <section name='home' className="home section" id="1">
-      {/* <Particles/> */}
       <div className="container">
         <div className="row">
           <div className="home-info padd-15">
