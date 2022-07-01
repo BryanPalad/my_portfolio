@@ -18,6 +18,8 @@ export default function SidebarData({
 }) {
 
   return (
+    <>
+    
     <div className="aside">
       <div className="logo">
         <a href="#home" onClick={activehomes}>
@@ -113,7 +115,6 @@ export default function SidebarData({
           </li>
         </Link>
       </ul>
-     
       <div className="copyright">Developed by Bryan Palad © {year}</div>
       <span onClick={activehomes}>
         <ScrollToTop smooth
@@ -123,5 +124,6 @@ export default function SidebarData({
         />
       </span>
     </div>
+    </>
   );
 }

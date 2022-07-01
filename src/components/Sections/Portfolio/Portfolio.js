@@ -26,7 +26,7 @@ export default function Portfolio() {
         <div className="row">
           <div className="portfolio-heading padd-15">
             <Fade bottom>
-              <h2>My College Projects:</h2>
+              <h2>My College Project:</h2>
             </Fade>
           </div>
         </div>

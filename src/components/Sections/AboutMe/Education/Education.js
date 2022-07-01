@@ -3,7 +3,6 @@ import "./Education.css";
 import Fade from "react-reveal/Fade";
 import { selectSchool } from "../../../../redux/about/educationSlice";
 import { useSelector } from "react-redux/es/exports";
-
 export default function Education() {
   const schoolObj = useSelector(selectSchool);
   return (

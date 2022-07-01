@@ -90,7 +90,7 @@ export default function AboutMe() {
               <div className="about-text padd-15">
                 <Fade bottom>
                   <h3>
-                    I'm Bryan Palad and a<span> Web Developer</span>
+                    I'm Bryan Palad and an<span> Aspiring Full Stack Developer</span>
                   </h3>
                 </Fade>
                 <p>
@@ -103,7 +103,7 @@ export default function AboutMe() {
             </div>
             <div className="row">
               <PersonalInfo />
-              <Qualifications />
+              {/* <Qualifications /> */}
             </div>
             <div className="row">
               <Skills />

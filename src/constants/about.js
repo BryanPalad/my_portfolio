@@ -1,3 +1,4 @@
+
 export const schoolObj = [
     {
       schoolyear: "SY. 2015- 2019",
